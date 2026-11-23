@@ -1,0 +1,500 @@
+/* ==========================================================================
+   Nauli Dekor - Shared Consistent Navbar & Header Styling
+   Konsisten di seluruh halaman: Beranda, Produk, Tambahan Dekorasi, Keranjang, Akun
+   ========================================================================== */
+
+/* Top Admin Monitoring Banner */
+.admin-monitor-banner {
+    background: #231c18;
+    color: #f7ede0;
+    border-bottom: 2px solid #bd922b;
+    position: relative;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.admin-monitor-banner .banner-inner {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 9px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+}
+
+.admin-monitor-banner .banner-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-monitor-banner .banner-sparkle {
+    color: #dfb247;
+    font-size: 15px;
+}
+
+.admin-monitor-banner .banner-return-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #bd922b, #9a7320);
+    color: #fff !important;
+    text-decoration: none !important;
+    padding: 7px 16px;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: all .2s ease;
+}
+
+.admin-monitor-banner .banner-return-link:hover {
+    background: linear-gradient(135deg, #d4a93f, #ab8225);
+    transform: translateY(-1px);
+}
+
+/* Site Header */
+.site-header {
+    height: 86px;
+    background: #ffffff;
+    border-bottom: 1px solid #ebe4dc;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.site-header .header-inner {
+    max-width: 1360px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 4vw, 50px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+/* Logo */
+.site-header .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #382e26;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    white-space: nowrap;
+    transition: opacity .2s ease;
+}
+
+.site-header .logo:hover {
+    opacity: 0.9;
+}
+
+.site-header .logo span {
+    color: #bd922b;
+    font-size: 23px;
+    line-height: 1;
+}
+
+.site-header .logo small {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    color: #7b7167;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+/* Main Navigation */
+.site-header .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+    flex: 1;
+}
+
+.site-header .main-nav a {
+    color: #61574d;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .3px;
+    padding: 8px 0;
+    position: relative;
+    white-space: nowrap;
+    transition: color .2s ease;
+}
+
+.site-header .main-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #bd922b;
+    transition: width .2s ease;
+}
+
+.site-header .main-nav a:hover,
+.site-header .main-nav a.active {
+    color: #bd922b;
+}
+
+.site-header .main-nav a.active::after,
+.site-header .main-nav a:hover::after {
+    width: 100%;
+}
+
+.site-header .mobile-only-links {
+    display: none;
+}
+
+/* Header Actions: Cart + User Profile (Side-by-Side on the right) */
+.site-header .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+/* Cart Button with Counter Badge */
+.site-header .cart-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #e2dacd;
+    background: #fbf9f6;
+    color: #554b41;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.site-header .cart-action-btn:hover,
+.site-header .cart-action-btn.active {
+    border-color: #bd922b;
+    background: #fdfaf2;
+    color: #bd922b;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(189, 146, 43, 0.15);
+}
+
+.site-header .cart-action-btn .cart-svg-icon {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
+}
+
+.site-header .cart-badge-count {
+    position: absolute;
+    top: -3px;
+    right: -4px;
+    min-width: 21px;
+    height: 21px;
+    padding: 0 5px;
+    border-radius: 11px;
+    background: #bd922b;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Receipt / Invoice Action Button */
+.site-header .receipt-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #e2dacd;
+    background: #fbf9f6;
+    color: #554b41;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.site-header .receipt-action-btn:hover,
+.site-header .receipt-action-btn.active {
+    border-color: #bd922b;
+    background: #fdfaf2;
+    color: #bd922b;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(189, 146, 43, 0.15);
+}
+
+.site-header .receipt-action-btn .receipt-svg-icon {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
+}
+
+/* User Action Button (Hi, [User]! or Masuk) */
+.site-header .user-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border: 1px solid #d4b25e;
+    border-radius: 26px;
+    background: #ffffff;
+    color: #926d1d;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .2px;
+    white-space: nowrap;
+    transition: all .2s ease;
+}
+
+.site-header .user-action-btn:hover {
+    background: #bd922b;
+    border-color: #bd922b;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(189, 146, 43, 0.25);
+}
+
+.site-header .user-action-btn .user-btn-icon {
+    font-size: 15px;
+    line-height: 1;
+}
+
+.site-header .user-action-btn.admin {
+    background: #29231f;
+    border-color: #29231f;
+    color: #f7eed7;
+}
+
+.site-header .user-action-btn.admin:hover {
+    background: #bd922b;
+    border-color: #bd922b;
+    color: #ffffff;
+}
+
+.site-header .user-action-btn.login {
+    background: #bd922b;
+    border-color: #bd922b;
+    color: #ffffff;
+}
+
+.site-header .user-action-btn.login:hover {
+    background: #a1781c;
+    border-color: #a1781c;
+}
+
+/* Logout Button on Header */
+.site-header .nav-logout-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border: 1px solid #ebcdc8;
+    border-radius: 22px;
+    background: #fff8f7;
+    color: #ad3d31;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .2px;
+    white-space: nowrap;
+    transition: all .2s ease;
+}
+
+.site-header .nav-logout-btn:hover {
+    background: #c54234;
+    border-color: #c54234;
+    color: #ffffff;
+    box-shadow: 0 3px 10px rgba(197, 66, 52, 0.25);
+    transform: translateY(-1px);
+}
+
+.site-header .mobile-logout-link {
+    color: #c54234 !important;
+    font-weight: 700 !important;
+}
+
+/* Menu Toggle for Mobile */
+.site-header .menu-toggle {
+    display: none;
+    border: 1px solid #e0d8cc;
+    background: #faf8f5;
+    color: #4a4137;
+    width: 42px;
+    height: 42px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .site-header {
+        height: 74px;
+    }
+
+    .site-header .menu-toggle {
+        display: inline-flex;
+        order: 3;
+    }
+
+    .site-header .header-actions {
+        order: 2;
+        margin-left: auto;
+    }
+
+    .site-header .main-nav {
+        display: none;
+        position: absolute;
+        top: 74px;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        border-bottom: 2px solid #bd922b;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 24px;
+        gap: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .site-header .main-nav.open {
+        display: flex;
+    }
+
+    .site-header .main-nav a {
+        font-size: 16px;
+        padding: 8px 0;
+        width: 100%;
+        border-bottom: 1px solid #f2ebe3;
+    }
+
+    .site-header .main-nav a::after {
+        display: none;
+    }
+
+    .site-header .mobile-only-links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 540px) {
+    .site-header .user-action-btn .user-btn-text {
+        max-width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* ==========================================================================
+   Consistent Dark Elegant Footer
+   ========================================================================== */
+footer,
+.site-footer,
+#kontak {
+    background: #211c1a !important;
+    color: #c5bbb3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 38px max(24px, 8vw);
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer .footer-inner,
+.site-footer .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .logo,
+.site-footer .logo,
+#kontak .logo {
+    color: #f0e6da;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+footer .logo span,
+.site-footer .logo span,
+#kontak .logo span {
+    color: #bd922b;
+    font-size: 20px;
+}
+
+footer .logo small,
+.site-footer .logo small,
+#kontak .logo small {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #a4998e;
+    font-weight: 700;
+}
+
+footer p,
+.site-footer p,
+#kontak p,
+.footer-tagline,
+.footer-copy {
+    margin: 0;
+    font-size: 14px;
+    color: #a99e95;
+    font-family: 'DM Sans', sans-serif;
+}
+
+@media (max-width: 600px) {
+    footer,
+    .site-footer,
+    #kontak,
+    footer .footer-inner,
+    .site-footer .footer-inner {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 32px 20px;
+    }
+}
+

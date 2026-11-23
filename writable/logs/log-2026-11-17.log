@@ -1,0 +1,236 @@
+DEBUG - 2026-11-17 15:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 15:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 15:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 15:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 15:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 15:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 15:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 15:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 15:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 15:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-11-17 15:48:14 --> Error connecting to the database: mysqli_sql_exception: An attempt was made to access a socket in a way forbidden by its access permissions in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:210
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(210): mysqli->real_connect()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1732): CodeIgniter\Database\BaseConnection->query()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1752): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(831): CodeIgniter\Database\BaseConnection->tableExists()
+#6 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest()
+#8 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(243): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked()
+#10 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run()
+#11 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\Console.php(45): CodeIgniter\CLI\Commands->run()
+#12 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#13 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand()
+#14 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\spark(87): CodeIgniter\Boot::bootSpark()
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: An attempt was made to access a socket in a way forbidden by its access permissions in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:240
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1732): CodeIgniter\Database\BaseConnection->query()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1752): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(831): CodeIgniter\Database\BaseConnection->tableExists()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest()
+#7 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(243): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked()
+#9 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run()
+#10 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\Console.php(45): CodeIgniter\CLI\Commands->run()
+#11 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#12 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand()
+#13 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\spark(87): CodeIgniter\Boot::bootSpark()
+#14 {main}
+DEBUG - 2026-11-17 15:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 15:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 15:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 15:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 15:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-11-17 15:51:57 --> Error connecting to the database: mysqli_sql_exception: An attempt was made to access a socket in a way forbidden by its access permissions in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:210
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(210): mysqli->real_connect()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1732): CodeIgniter\Database\BaseConnection->query()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1752): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(831): CodeIgniter\Database\BaseConnection->tableExists()
+#6 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest()
+#8 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(243): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked()
+#10 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run()
+#11 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\Console.php(45): CodeIgniter\CLI\Commands->run()
+#12 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#13 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand()
+#14 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\spark(87): CodeIgniter\Boot::bootSpark()
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: An attempt was made to access a socket in a way forbidden by its access permissions in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:240
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1732): CodeIgniter\Database\BaseConnection->query()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1752): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(831): CodeIgniter\Database\BaseConnection->tableExists()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest()
+#7 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(243): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked()
+#9 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run()
+#10 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\Console.php(45): CodeIgniter\CLI\Commands->run()
+#11 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#12 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand()
+#13 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\spark(87): CodeIgniter\Boot::bootSpark()
+#14 {main}
+ERROR - 2026-11-17 16:00:09 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:210
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(210): mysqli->real_connect()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1732): CodeIgniter\Database\BaseConnection->query()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1752): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(831): CodeIgniter\Database\BaseConnection->tableExists()
+#6 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest()
+#8 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(243): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked()
+#10 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run()
+#11 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\Console.php(45): CodeIgniter\CLI\Commands->run()
+#12 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#13 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand()
+#14 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\spark(87): CodeIgniter\Boot::bootSpark()
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:240
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1732): CodeIgniter\Database\BaseConnection->query()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1752): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(831): CodeIgniter\Database\BaseConnection->tableExists()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest()
+#7 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(243): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked()
+#9 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run()
+#10 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CLI\Console.php(45): CodeIgniter\CLI\Commands->run()
+#11 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#12 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand()
+#13 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\spark(87): CodeIgniter\Boot::bootSpark()
+#14 {main}
+DEBUG - 2026-11-17 16:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:16:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-17 16:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,570 @@
+:root {
+    --ink: #29231f;
+    --gold: #bd922b;
+    --gold-lite: #f7edd5;
+    --muted: #7b736b;
+    --line: #ebe4dc;
+    --blush: #f5e7e4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Page Heading */
+.page-heading {
+    padding: 60px max(24px, 8vw) 44px;
+    background: #fcfaf7;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.eyebrow {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #ad8222;
+    margin: 0 0 12px;
+    text-transform: uppercase;
+}
+
+.page-heading h1,
+h2 {
+    font: 500 42px/1.12 'Playfair Display', serif;
+    letter-spacing: -.6px;
+    margin: 0;
+}
+
+.page-heading > div > p:last-child {
+    max-width: 520px;
+    margin: 14px 0 0;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.breadcrumbs {
+    font-size: 14px;
+    color: #8c8279;
+    padding-top: 14px;
+    white-space: nowrap;
+}
+
+.breadcrumbs a {
+    color: #9a7420;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs span {
+    margin: 0 8px;
+    color: #c0b7ae;
+}
+
+/* Category Tabs */
+.category-tabs {
+    border-bottom: 1px solid var(--line);
+    padding: 0 max(24px, 8vw);
+    display: flex;
+    gap: 38px;
+    overflow-x: auto;
+    background: #fff;
+}
+
+.category-tabs a {
+    padding: 18px 4px 15px;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    color: #7b7269;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all .2s ease;
+}
+
+.category-tabs a span {
+    color: #bf962f;
+    font-size: 13px;
+}
+
+.category-tabs a:hover {
+    color: #312a25;
+}
+
+.category-tabs a.active {
+    color: #312a25;
+    border-color: #c89f3d;
+    font-weight: 700;
+}
+
+/* Package Layout (Sidebar Filter + Cards Grid) */
+.package-layout {
+    max-width: 1360px;
+    margin: auto;
+    padding: 50px max(24px, 8vw) 85px;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 50px;
+}
+
+.filter-panel {
+    border-right: 1px solid var(--line);
+    padding-right: 30px;
+}
+
+.filter-title {
+    font: 600 16px 'Playfair Display', serif;
+    margin: 0 0 16px;
+    color: #342b24;
+}
+
+.package-types {
+    display: grid;
+    gap: 8px;
+}
+
+.type-button {
+    cursor: pointer;
+    text-align: left;
+    padding: 13px 14px;
+    border: 1px solid #e8e1d7;
+    border-radius: 4px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    align-items: center;
+    color: #584f47;
+    transition: all .2s ease;
+}
+
+.type-button span {
+    grid-row: span 2;
+    color: #bd912d;
+    font-size: 14px;
+}
+
+.type-button b {
+    font: 700 14px 'DM Sans', sans-serif;
+    color: #383028;
+}
+
+.type-button small {
+    font-size: 12px;
+    color: #8c837b;
+    margin-top: 3px;
+}
+
+.type-button:hover {
+    border-color: #cfaa3e;
+    background: #fdfbf7;
+}
+
+.type-button.active {
+    border-color: #c89f3d;
+    background: #fbf7ee;
+    box-shadow: 0 2px 8px rgba(189, 146, 43, 0.12);
+}
+
+.help-box {
+    margin-top: 36px;
+    padding: 20px 18px;
+    background: #292421;
+    color: #e4dcd4;
+    border-radius: 4px;
+}
+
+.help-box span {
+    color: #dfba4e;
+    font-size: 16px;
+}
+
+.help-box p {
+    font-size: 13px;
+    line-height: 1.65;
+    margin: 10px 0 14px;
+    color: #d5ccc4;
+}
+
+.help-box p b {
+    color: #fff;
+}
+
+.help-box a {
+    font-size: 13px;
+    font-weight: 700;
+    color: #f0d27c;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.help-box a:hover {
+    text-decoration: underline;
+}
+
+/* Content Area */
+.content-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.content-top h2,
+.additional h2 {
+    font: 500 34px 'Playfair Display', serif;
+    margin: 0;
+}
+
+.result-count {
+    font-size: 14px;
+    color: #847a71;
+    margin: 0;
+}
+
+.result-count b {
+    color: #a87d1f;
+    font-weight: 700;
+}
+
+.package-description {
+    font-size: 15px;
+    color: #797067;
+    line-height: 1.75;
+    margin: 14px 0 28px;
+}
+
+/* Cards Grid */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.package-card {
+    border: 1px solid var(--line);
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+.card-image {
+    height: 190px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(12, 9, 8, .36), transparent), url('../images/dashboard-hero.png') center/cover;
+}
+
+.card-number {
+    position: absolute;
+    left: 14px;
+    top: 13px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.tag {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    background: #fff;
+    color: #776231;
+    padding: 6px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 2px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.card-content {
+    padding: 20px 18px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-type {
+    color: #aa7e21;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin: 0 0 6px;
+}
+
+.card-content h3 {
+    font: 500 21px/1.25 'Playfair Display', serif;
+    margin: 0;
+    min-height: 48px;
+    color: #2b231d;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    color: #7d746c;
+    margin: 8px 0 18px;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.card-bottom {
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.card-bottom small {
+    display: block;
+    font-size: 12px;
+    color: #8c8279;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #7a5a19;
+}
+
+.select-button {
+    cursor: pointer;
+    border: 0;
+    background: #c49830;
+    color: #fff;
+    font: 700 13px 'DM Sans', sans-serif;
+    padding: 10px 15px;
+    border-radius: 3px;
+    white-space: nowrap;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: background .2s ease;
+}
+
+.select-button:hover {
+    background: #a97e20;
+}
+
+.select-button span {
+    font-size: 16px;
+}
+
+/* Additional Section */
+.additional {
+    background: var(--blush);
+    padding: 68px max(24px, 8vw);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.additional > div > p:last-child {
+    max-width: 440px;
+    color: #6a5e57;
+    font-size: 16px;
+    line-height: 1.75;
+    margin-top: 14px;
+}
+
+.addon-list {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.addon-list span {
+    border: 1px solid #d8bdb5;
+    background: #fffaf9;
+    color: #554841;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 3px;
+}
+
+/* Toast */
+.toast {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    transform: translateY(15px);
+    opacity: 0;
+    pointer-events: none;
+    background: #28221f;
+    color: #fff;
+    padding: 16px 22px;
+    font-size: 14px;
+    border-radius: 4px;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.25);
+    transition: .25s ease;
+    z-index: 9999;
+}
+
+.toast.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 950px) {
+    .package-layout {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+    .filter-panel {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        padding-right: 0;
+        padding-bottom: 24px;
+    }
+    .package-types {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .additional {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-heading {
+        flex-direction: column;
+        padding: 40px 20px 28px;
+    }
+    .package-types {
+        grid-template-columns: 1fr;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .category-tabs {
+        padding: 0 20px;
+        gap: 20px;
+    }
+    .content-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* ==========================================================================
+   Consistent Dark Elegant Footer
+   ========================================================================== */
+footer,
+.site-footer,
+#kontak {
+    background: #211c1a !important;
+    color: #c5bbb3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 38px max(24px, 8vw);
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer .footer-inner,
+.site-footer .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .logo,
+.site-footer .logo,
+#kontak .logo {
+    color: #f0e6da;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+footer .logo span,
+.site-footer .logo span,
+#kontak .logo span {
+    color: #bd922b;
+    font-size: 20px;
+}
+
+footer .logo small,
+.site-footer .logo small,
+#kontak .logo small {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #a4998e;
+    font-weight: 700;
+}
+
+footer p,
+.site-footer p,
+#kontak p,
+.footer-tagline,
+.footer-copy {
+    margin: 0;
+    font-size: 14px;
+    color: #a99e95;
+    font-family: 'DM Sans', sans-serif;
+}
+
+@media (max-width: 600px) {
+    footer,
+    .site-footer,
+    #kontak,
+    footer .footer-inner,
+    .site-footer .footer-inner {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 32px 20px;
+    }
+}
+

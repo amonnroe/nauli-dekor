@@ -1,0 +1,1 @@
+<?php namespace App\Models; use CodeIgniter\Model; class ExtraModel extends Model { protected $table='extras'; protected $allowedFields=['nama','deskripsi','harga','stok','gambar','aktif']; protected $useTimestamps=true; protected $returnType='array'; }

@@ -1,0 +1,753 @@
+DEBUG - 2026-11-19 00:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 00:38:11 --> CSRF token verified.
+DEBUG - 2026-11-19 00:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 00:38:24 --> CSRF token verified.
+DEBUG - 2026-11-19 00:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 00:39:22 --> CSRF token verified.
+DEBUG - 2026-11-19 00:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 00:39:29 --> CSRF token verified.
+DEBUG - 2026-11-19 00:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 00:39:34 --> CSRF token verified.
+DEBUG - 2026-11-19 00:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 00:39:58 --> CSRF token verified.
+DEBUG - 2026-11-19 00:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 00:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 09:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 09:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:09:23 --> CSRF token verified.
+DEBUG - 2026-11-19 10:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:09:43 --> CSRF token verified.
+DEBUG - 2026-11-19 10:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:09:49 --> CSRF token verified.
+DEBUG - 2026-11-19 10:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:09:53 --> CSRF token verified.
+DEBUG - 2026-11-19 10:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:09:57 --> CSRF token verified.
+DEBUG - 2026-11-19 10:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:10:03 --> CSRF token verified.
+DEBUG - 2026-11-19 10:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:10:37 --> CSRF token verified.
+DEBUG - 2026-11-19 10:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:10:49 --> CSRF token verified.
+DEBUG - 2026-11-19 10:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:11:06 --> CSRF token verified.
+DEBUG - 2026-11-19 10:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:14:21 --> CSRF token verified.
+DEBUG - 2026-11-19 10:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-11-19 10:14:21 --> Unknown column 'kanal_pembayaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 316.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(316): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(928): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(845): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Customer.php(740): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\CodeIgniter.php(972): App\Controllers\Customer->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\DOWNLOADS\\codeigniter4-framework-v4.6.3-0-g68d1a58\\nauli_dekor\\public\\index.php')
+ERROR - 2026-11-19 10:14:21 --> Checkout Nauli Dekor gagal: Gagal menyimpan data utama pesanan.
+DEBUG - 2026-11-19 10:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:14:24 --> CSRF token verified.
+DEBUG - 2026-11-19 10:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-11-19 10:14:24 --> Unknown column 'kanal_pembayaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 316.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(316): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(928): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(845): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Customer.php(740): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\CodeIgniter.php(972): App\Controllers\Customer->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\DOWNLOADS\\codeigniter4-framework-v4.6.3-0-g68d1a58\\nauli_dekor\\public\\index.php')
+ERROR - 2026-11-19 10:14:24 --> Checkout Nauli Dekor gagal: Gagal menyimpan data utama pesanan.
+DEBUG - 2026-11-19 10:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:14:29 --> CSRF token verified.
+DEBUG - 2026-11-19 10:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-11-19 10:14:29 --> Unknown column 'kanal_pembayaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 316.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(316): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(928): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(845): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Customer.php(740): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\CodeIgniter.php(972): App\Controllers\Customer->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\DOWNLOADS\\codeigniter4-framework-v4.6.3-0-g68d1a58\\nauli_dekor\\public\\index.php')
+ERROR - 2026-11-19 10:14:29 --> Checkout Nauli Dekor gagal: Gagal menyimpan data utama pesanan.
+DEBUG - 2026-11-19 10:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:14:40 --> CSRF token verified.
+DEBUG - 2026-11-19 10:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-11-19 10:14:40 --> Unknown column 'kanal_pembayaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 316.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(316): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(928): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(845): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Customer.php(740): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\CodeIgniter.php(972): App\Controllers\Customer->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\DOWNLOADS\\codeigniter4-framework-v4.6.3-0-g68d1a58\\nauli_dekor\\public\\index.php')
+ERROR - 2026-11-19 10:14:40 --> Checkout Nauli Dekor gagal: Gagal menyimpan data utama pesanan.
+DEBUG - 2026-11-19 10:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:14:47 --> CSRF token verified.
+DEBUG - 2026-11-19 10:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:14:56 --> CSRF token verified.
+DEBUG - 2026-11-19 10:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-11-19 10:14:56 --> Unknown column 'kanal_pembayaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 316.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(316): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(928): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(845): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Customer.php(740): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\CodeIgniter.php(972): App\Controllers\Customer->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\DOWNLOADS\\codeigniter4-framework-v4.6.3-0-g68d1a58\\nauli_dekor\\public\\index.php')
+ERROR - 2026-11-19 10:14:56 --> Checkout Nauli Dekor gagal: Gagal menyimpan data utama pesanan.
+DEBUG - 2026-11-19 10:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:33:51 --> CSRF token verified.
+DEBUG - 2026-11-19 10:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:34:03 --> CSRF token verified.
+DEBUG - 2026-11-19 10:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:41:09 --> CSRF token verified.
+DEBUG - 2026-11-19 10:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 10:41:16 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2026-11-19 10:41:54 --> CSRF token verified.
+DEBUG - 2026-11-19 10:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 10:41:54 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-11-19 10:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 10:42:00 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-11-19 10:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 10:42:08 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-11-19 10:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 10:42:11 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-11-19 10:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 10:42:15 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-11-19 10:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 10:42:22 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-11-19 10:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 10:42:31 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-11-19 10:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 10:42:51 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-11-19 10:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 10:42:57 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2026-11-19 10:43:01 --> CSRF token verified.
+DEBUG - 2026-11-19 10:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 10:43:02 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-11-19 10:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 10:43:06 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-11-19 10:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 10:43:17 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-11-19 10:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 10:43:21 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2026-11-19 10:43:25 --> CSRF token verified.
+DEBUG - 2026-11-19 10:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 10:43:26 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-11-19 10:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 10:43:41 --> CSRF token verified.
+DEBUG - 2026-11-19 10:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 10:45:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 12:49:28 --> CSRF token verified.
+DEBUG - 2026-11-19 12:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:50:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 12:50:35 --> CSRF token verified.
+DEBUG - 2026-11-19 12:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 12:50:43 --> CSRF token verified.
+DEBUG - 2026-11-19 12:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 12:51:05 --> CSRF token verified.
+DEBUG - 2026-11-19 12:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 12:51:15 --> CSRF token verified.
+DEBUG - 2026-11-19 12:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 12:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 13:29:16 --> CSRF token verified.
+DEBUG - 2026-11-19 13:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 13:29:29 --> CSRF token verified.
+DEBUG - 2026-11-19 13:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 13:42:06 --> CSRF token verified.
+DEBUG - 2026-11-19 13:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 13:44:46 --> CSRF token verified.
+DEBUG - 2026-11-19 13:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-11-19 13:44:50 --> ErrorException: Uncaught ErrorException: Undefined property: Config\Format::$jsonEncodeDepth in D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(352): CodeIgniter\Format\JSONFormatter->format()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\API\ResponseTrait.php(111): CodeIgniter\Debug\ExceptionHandler->format()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(92): CodeIgniter\Debug\ExceptionHandler->respond()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Debug\Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'GET: assets/css/admin.css'.
+#0 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(1022): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound()
+#1 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\CodeIgniter->display404errors()
+#2 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#3 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#4 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#5 D:\DOWNLOADS\codeigniter4-framework-v4.6.3-0-g68d1a58\nauli_dekor\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#6 {main}
+[Method: GET, Route: assets/css/admin.css]
+in SYSTEMPATH\Format\JSONFormatter.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-11-19 13:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 13:52:32 --> CSRF token verified.
+DEBUG - 2026-11-19 13:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 13:53:10 --> CSRF token verified.
+DEBUG - 2026-11-19 13:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 13:53:14 --> CSRF token verified.
+DEBUG - 2026-11-19 13:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 13:53:28 --> CSRF token verified.
+DEBUG - 2026-11-19 13:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-19 13:53:45 --> CSRF token verified.
+DEBUG - 2026-11-19 13:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 13:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 14:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 14:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 14:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 14:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 14:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-19 14:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-11-19 14:53:53 --> Table 'db_dekorasi_ci4.order_payments' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 316.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(316): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(928): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(845): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Customer.php(1124): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Customer.php(485): App\Controllers\Customer->accountPage()
+ 7 SYSTEMPATH\CodeIgniter.php(972): App\Controllers\Customer->history()
+ 8 SYSTEMPATH\CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\DOWNLOADS\\codeigniter4-framework-v4.6.3-0-g68d1a58\\nauli_dekor\\public\\index.php')
+CRITICAL - 2026-11-19 14:53:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_dekorasi_ci4.order_payments' doesn't exist
+[Method: GET, Route: riwayat-pesanan]
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Customer.php(1124): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Customer.php(485): App\Controllers\Customer->accountPage()
+ 4 SYSTEMPATH\CodeIgniter.php(972): App\Controllers\Customer->history()
+ 5 SYSTEMPATH\CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\DOWNLOADS\\codeigniter4-framework-v4.6.3-0-g68d1a58\\nauli_dekor\\public\\index.php')
+CRITICAL - 2026-11-19 14:53:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_dekorasi_ci4.order_payments' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 330.
+ 1 SYSTEMPATH\Database\BaseConnection.php(928): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(845): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Customer.php(1124): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Customer.php(485): App\Controllers\Customer->accountPage()
+ 6 SYSTEMPATH\CodeIgniter.php(972): App\Controllers\Customer->history()
+ 7 SYSTEMPATH\CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\DOWNLOADS\\codeigniter4-framework-v4.6.3-0-g68d1a58\\nauli_dekor\\public\\index.php')
+CRITICAL - 2026-11-19 14:53:53 --> [Caused by] mysqli_sql_exception: Table 'db_dekorasi_ci4.order_payments' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 316.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(316): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(928): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(845): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Customer.php(1124): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Customer.php(485): App\Controllers\Customer->accountPage()
+ 7 SYSTEMPATH\CodeIgniter.php(972): App\Controllers\Customer->history()
+ 8 SYSTEMPATH\CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\DOWNLOADS\\codeigniter4-framework-v4.6.3-0-g68d1a58\\nauli_dekor\\public\\index.php')
