@@ -103,7 +103,6 @@ $typeLabel = $typeLabels[$package['jenis_paket'] ?? ''] ?? ucfirst((string) ($pa
                                 </div>
                                 <button type="button" class="cal-overlay-close" id="cal-overlay-close" aria-label="Tutup">×</button>
                             </div>
-                            <p class="cal-overlay-desc">Tanggal <span class="cal-label-booked">merah</span> sudah dipesan. Tanggal <span class="cal-label-past">abu-abu</span> tidak tersedia. Pilih tanggal <span class="cal-label-available">tersedia</span> untuk melanjutkan pemesanan.</p>
                             <div class="cal-overlay-loading" id="cal-loading-hint" style="display:none;">
                                 <span class="cal-spinner"></span> Memuat data ketersediaan…
                             </div>
@@ -122,7 +121,6 @@ $typeLabel = $typeLabels[$package['jenis_paket'] ?? ''] ?? ucfirst((string) ($pa
                                 <span class="cal-legend-item"><span class="cal-dot today"></span>Hari ini</span>
                                 <span class="cal-legend-item"><span class="cal-dot selected"></span>Dipilih</span>
                             </div>
-                            <div class="cal-hover-note" id="cal-hover-note">Arahkan kursor atau klik tanggal untuk melihat rincian catatan jadwal.</div>
                             <div class="cal-overlay-footer" id="cal-overlay-footer" style="display:none;">
                                 <div class="cal-overlay-sel-info">
                                     <span>Tanggal dipilih:</span>
@@ -189,7 +187,6 @@ $typeLabel = $typeLabels[$package['jenis_paket'] ?? ''] ?? ucfirst((string) ($pa
             const selDisplay = document.getElementById('cal-overlay-selected-display');
             const confirmBtn = document.getElementById('cal-overlay-confirm');
             const loadingEl  = document.getElementById('cal-loading-hint');
-            const hoverNote  = document.getElementById('cal-hover-note');
 
             // DOM refs — trigger + actions
             const triggerBtn     = document.getElementById('btn-pilih-tanggal');
@@ -272,7 +269,7 @@ $typeLabel = $typeLabels[$package['jenis_paket'] ?? ''] ?? ucfirst((string) ($pa
                     if (isToday && !isPast) cls += ' today';
 
                     const disabled = isPast || isBooked;
-                    html += '<button type="button" class="' + cls + '" data-date="' + ds + '" data-desc="' + noteDesc + '"' +
+                    html += '<button type="button" class="' + cls + '" data-date="' + ds + '" title="' + formatDisplay(ds) + ': ' + noteDesc + '"' +
                         (disabled ? ' disabled aria-disabled="true"' : '') + '>' +
                         '<span class="cal-day-num">' + d + '</span>' +
                         '<span class="cal-day-note">' + noteText + '</span>' +
@@ -280,41 +277,15 @@ $typeLabel = $typeLabels[$package['jenis_paket'] ?? ''] ?? ucfirst((string) ($pa
                 }
                 grid.innerHTML = html;
 
-                if (selectedDate && hoverNote) {
-                    hoverNote.innerHTML = '<strong>' + formatDisplay(selectedDate) + ':</strong> Tanggal terpilih untuk acara Anda.';
-                } else if (hoverNote) {
-                    hoverNote.textContent = 'Arahkan kursor atau klik tanggal untuk melihat rincian catatan jadwal.';
-                }
-
                 grid.querySelectorAll('.cal-day').forEach(btn => {
                     const ds = btn.dataset.date;
-                    const desc = btn.dataset.desc;
                     if (!ds) return;
-
-                    btn.addEventListener('mouseenter', () => {
-                        if (hoverNote) {
-                            hoverNote.innerHTML = '<strong>' + formatDisplay(ds) + ':</strong> ' + desc;
-                        }
-                    });
-
-                    btn.addEventListener('mouseleave', () => {
-                        if (hoverNote) {
-                            if (selectedDate) {
-                                hoverNote.innerHTML = '<strong>' + formatDisplay(selectedDate) + ':</strong> Tanggal terpilih untuk acara Anda.';
-                            } else {
-                                hoverNote.textContent = 'Arahkan kursor atau klik tanggal untuk melihat rincian catatan jadwal.';
-                            }
-                        }
-                    });
 
                     if (!btn.disabled) {
                         btn.addEventListener('click', () => {
                             selectedDate = ds;
                             if (selDisplay) selDisplay.textContent = formatDisplay(selectedDate);
                             if (footer) footer.style.display = 'flex';
-                            if (hoverNote) {
-                                hoverNote.innerHTML = '<strong>' + formatDisplay(selectedDate) + ':</strong> Tanggal terpilih untuk acara Anda.';
-                            }
                             renderCalendar();
                         });
                     }

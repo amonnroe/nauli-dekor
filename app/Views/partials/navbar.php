@@ -58,7 +58,7 @@ $isAdmin = (bool) session('admin_id');
                 Beranda
             </a>
             <a class="<?= $activeNav === 'packages' ? 'active' : '' ?>" href="<?= base_url('paket-dekorasi') ?>">
-                Produk
+                Dekorasi
             </a>
             <a class="<?= $activeNav === 'extras' ? 'active' : '' ?>" href="<?= base_url('tambahan-dekorasi') ?>">
                 Tambahan Dekorasi
