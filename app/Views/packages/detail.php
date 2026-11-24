@@ -34,7 +34,7 @@ $typeLabel = $typeLabels[$package['jenis_paket'] ?? ''] ?? ucfirst((string) ($pa
             </div>
             <nav class="breadcrumbs">
                 <a href="<?= base_url('dashboard') ?>">Beranda</a><span>/</span>
-                <a href="<?= base_url('paket-dekorasi?kategori=' . ($package['kategori'] ?? 'pernikahan')) ?>">Katalog Paket</a><span>/</span>
+                <a href="<?= base_url('paket-dekorasi') ?>">Katalog Paket</a><span>/</span>
                 <b>Detail</b>
             </nav>
         </section>
@@ -50,7 +50,7 @@ $typeLabel = $typeLabels[$package['jenis_paket'] ?? ''] ?? ucfirst((string) ($pa
                 </div>
 
                 <div class="detail-summary">
-                    <p class="eyebrow"><?= esc(strtoupper($categoryLabel)) ?> · <?= esc(strtoupper($typeLabel)) ?></p>
+                    <p class="eyebrow">PAKET DEKORASI</p>
                     <h1><?= esc($package['nama_paket']) ?></h1>
                     <p class="detail-description"><?= esc($package['deskripsi'] ?: 'Informasi deskripsi paket belum tersedia.') ?></p>
 
@@ -60,8 +60,7 @@ $typeLabel = $typeLabels[$package['jenis_paket'] ?? ''] ?? ucfirst((string) ($pa
                     </div>
 
                     <div class="detail-facts">
-                        <div><span>Kategori</span><b><?= esc($categoryLabel) ?></b></div>
-                        <div><span>Jenis paket</span><b><?= esc($typeLabel) ?></b></div>
+                        <div><span>Kategori</span><b>Dekorasi Acara</b></div>
                         <div><span>Lokasi dekorasi</span><b><?= esc($package['lokasi']) ?></b></div>
                     </div>
 

@@ -51,11 +51,11 @@ $dekorClass = static function ($status): string {
         <p class="admin-sidebar-label">MENU PENGELOLA</p>
         <nav class="admin-nav">
             <a class="<?= $section === 'dashboard' ? 'active' : '' ?>" href="<?= base_url('admin') ?>"><span>⌂</span> Dashboard</a>
+            <a class="<?= $section === 'financial-reports' ? 'active' : '' ?>" href="<?= base_url('admin/laporan') ?>"><span>▥</span> Laporan & Keuangan</a>
             <a class="<?= in_array($section, ['packages', 'package-form'], true) ? 'active' : '' ?>" href="<?= base_url('admin/paket') ?>"><span>✿</span> Paket Dekorasi</a>
             <a class="<?= in_array($section, ['extras', 'extra-form'], true) ? 'active' : '' ?>" href="<?= base_url('admin/tambahan') ?>"><span>◇</span> Tambahan Dekorasi</a>
             <a class="<?= in_array($section, ['orders', 'order-detail'], true) ? 'active' : '' ?>" href="<?= base_url('admin/pesanan') ?>"><span>▤</span> Pesanan</a>
             <a class="<?= $section === 'customers' ? 'active' : '' ?>" href="<?= base_url('admin/pelanggan') ?>"><span>♙</span> Pelanggan</a>
-            <a class="<?= $section === 'financial-reports' ? 'active' : '' ?>" href="<?= base_url('admin/laporan') ?>"><span>▥</span> Laporan & Keuangan</a>
             <a class="<?= in_array($section, ['shipping-zones', 'shipping-kecamatan-form', 'shipping-kelurahan-form'], true) ? 'active' : '' ?>" href="<?= base_url('admin/ongkos-kirim') ?>"><span>🗺</span> Aturan Ongkos Kirim</a>
         </nav>
         <div class="admin-sidebar-bottom">
@@ -408,98 +408,231 @@ unset($viewScope);
                 $chart = is_array($report['chart'] ?? null) ? $report['chart'] : [];
                 $chartMax = max(1, (float) ($report['chartMax'] ?? 0));
                 $filterQuery = is_array($report['filterQuery'] ?? null) ? $report['filterQuery'] : [];
+                $pagination = is_array($report['pagination'] ?? null) ? $report['pagination'] : [
+                    'currentPage' => 1,
+                    'totalPages'  => 1,
+                    'totalRows'   => count($transactions),
+                    'perPage'     => 20,
+                    'hasPrev'     => false,
+                    'hasNext'     => false,
+                    'prevPage'    => 1,
+                    'nextPage'    => 1,
+                    'startRow'    => count($transactions) > 0 ? 1 : 0,
+                    'endRow'      => count($transactions),
+                ];
+                ?>
+                <?php
+                $qrisAmount = 0.0;
+                $transferAmount = 0.0;
+                foreach ($methodRows as $mr) {
+                    $metodeKey = strtoupper(trim((string) ($mr['metode'] ?? '')));
+                    if (strpos($metodeKey, 'QRIS') !== false) {
+                        $qrisAmount += (float) ($mr['verified_amount'] ?? 0);
+                    } elseif (strpos($metodeKey, 'TRANSFER') !== false || strpos($metodeKey, 'BANK') !== false) {
+                        $transferAmount += (float) ($mr['verified_amount'] ?? 0);
+                    }
+                }
                 ?>
                 <div class="admin-page-intro">
-                    <div><p class="admin-eyebrow">KEUANGAN USAHA</p><h2>Laporan dan Keuangan</h2><p>Rekap transaksi, penerimaan terverifikasi, harga pokok perolehan, dan biaya aktual usaha.</p></div>
+                    <div><p class="admin-eyebrow">KEUANGAN USAHA</p><h2>Laporan dan Keuangan</h2><p>Rekap transaksi dan penerimaan pembayaran terverifikasi.</p></div>
                     <a class="admin-button primary" href="<?= base_url('admin/laporan/pdf?' . http_build_query($filterQuery)) ?>" target="_blank" rel="noopener">▣ Export / Cetak PDF</a>
                 </div>
 
                 <section class="finance-period-note">
                     <strong>Periode laporan: <?= esc(date('d/m/Y', strtotime((string) ($filters['tanggal_awal_hasil'] ?? date('Y-m-01'))))) ?> – <?= esc(date('d/m/Y', strtotime((string) ($filters['tanggal_akhir_hasil'] ?? date('Y-m-d'))))) ?></strong>
-                    <span>Pendapatan hanya menghitung pembayaran yang sudah diverifikasi admin. Filter metode dan status berlaku untuk tabel transaksi dan pendapatan; biaya dihitung berdasarkan tanggal biaya.</span>
+                    <span>Pendapatan hanya menghitung pembayaran yang sudah diverifikasi admin. Filter metode dan status berlaku untuk tabel transaksi dan pendapatan.</span>
                 </section>
 
                 <div class="finance-kpi-grid">
-                    <article class="admin-stat"><span>Total Transaksi</span><strong><?= number_format((int) ($summary['transactionCount'] ?? 0), 0, ',', '.') ?></strong><small>Jumlah pesanan unik dalam hasil filter</small></article>
-                    <article class="admin-stat"><span>Total Pendapatan Terverifikasi</span><strong class="stat-currency"><?= esc($currency($summary['revenue'] ?? 0)) ?></strong><small><?= (int) ($summary['verifiedPaymentCount'] ?? 0) ?> catatan pembayaran terverifikasi</small></article>
-                    <article class="admin-stat"><span>Total Harga Perolehan / HPP</span><strong class="stat-currency"><?= esc($currency($summary['hpp'] ?? 0)) ?></strong><small>Biaya langsung yang dicatat pada pesanan</small></article>
-                    <article class="admin-stat"><span>Keuntungan Kotor</span><strong class="stat-currency"><?= esc($currency($summary['grossProfit'] ?? 0)) ?></strong><small>Pendapatan terverifikasi dikurangi HPP</small></article>
-                    <article class="admin-stat"><span>Biaya Aktual Usaha</span><strong class="stat-currency"><?= esc($currency($summary['totalExpenses'] ?? 0)) ?></strong><small>Akumulasi HPP dan biaya operasional</small></article>
-                    <article class="admin-stat"><span>Hasil Bersih Berbasis Kas</span><strong class="stat-currency"><?= esc($currency($summary['netCashResult'] ?? 0)) ?></strong><small>Pendapatan dikurangi HPP dan biaya operasional</small></article>
-                </div>
-
-                <section class="admin-panel-card finance-filter-card">
-                    <div class="admin-card-heading"><div><p class="admin-eyebrow">FILTER LAPORAN</p><h2>Atur periode dan transaksi</h2></div></div>
-                    <form class="finance-filter-grid" method="get" action="<?= base_url('admin/laporan') ?>">
-                        <label>Periode laporan<select name="periode" id="finance-period"><option value="harian" <?= ($filters['periode'] ?? '') === 'harian' ? 'selected' : '' ?>>Harian</option><option value="bulanan" <?= ($filters['periode'] ?? 'bulanan') === 'bulanan' ? 'selected' : '' ?>>Bulanan</option><option value="tahunan" <?= ($filters['periode'] ?? '') === 'tahunan' ? 'selected' : '' ?>>Tahunan</option><option value="custom" <?= ($filters['periode'] ?? '') === 'custom' ? 'selected' : '' ?>>Rentang tanggal</option></select></label>
-                        <label>Tanggal (harian)<input type="date" name="tanggal" value="<?= esc($filters['tanggal'] ?? date('Y-m-d')) ?>"></label>
-                        <label>Bulan<input type="month" name="bulan" value="<?= esc($filters['bulan'] ?? date('Y-m')) ?>"></label>
-                        <label>Tahun<input type="number" name="tahun" min="2000" max="2100" value="<?= (int) ($filters['tahun'] ?? date('Y')) ?>"></label>
-                        <label>Dari tanggal<input type="date" name="tanggal_mulai" value="<?= esc($filters['tanggal_mulai'] ?? date('Y-m-01')) ?>"></label>
-                        <label>Sampai tanggal<input type="date" name="tanggal_selesai" value="<?= esc($filters['tanggal_selesai'] ?? date('Y-m-d')) ?>"></label>
-                        <label>Metode pembayaran<select name="kanal"><option value="">Semua metode</option><?php foreach (['QRIS', 'Transfer Bank', 'Bayar di Tempat Acara', 'Tidak diketahui'] as $value): ?><option value="<?= esc($value) ?>" <?= ($filters['kanal'] ?? '') === $value ? 'selected' : '' ?>><?= esc($value) ?></option><?php endforeach; ?></select></label>
-                        <label>Status transaksi<select name="status_transaksi"><option value="">Semua status</option><?php foreach (['Terverifikasi', 'Belum Bayar', 'Menunggu Verifikasi', 'Ditolak', 'Menunggu Pembayaran di Tempat'] as $value): ?><option value="<?= esc($value) ?>" <?= ($filters['status_transaksi'] ?? '') === $value ? 'selected' : '' ?>><?= esc($value) ?></option><?php endforeach; ?></select></label>
-                        <div class="finance-filter-actions"><button class="admin-button primary" type="submit">Terapkan Filter</button><a class="admin-button secondary" href="<?= base_url('admin/laporan') ?>">Reset</a></div>
-                    </form>
-                </section>
-
-                <div class="finance-analysis-grid">
-                    <section class="admin-panel-card">
-                        <div class="admin-card-heading"><div><p class="admin-eyebrow">TREN KEUANGAN</p><h2>Pendapatan, HPP, dan biaya usaha</h2></div></div>
-                        <?php if ($chart === []): ?><p class="admin-empty">Belum ada data untuk grafik periode ini.</p><?php else: ?>
-                            <div class="finance-chart-legend"><span><i class="revenue"></i>Pendapatan</span><span><i class="hpp"></i>HPP</span><span><i class="operational"></i>Operasional</span></div>
-                            <div class="finance-chart">
-                                <?php foreach ($chart as $point): ?>
-                                    <div class="finance-chart-column"><div class="finance-chart-bars">
-                                        <span class="finance-bar revenue" style="height:<?= max(2, ((float) $point['revenue'] / $chartMax) * 100) ?>%" title="Pendapatan: <?= esc($currency($point['revenue'])) ?>"></span>
-                                        <span class="finance-bar hpp" style="height:<?= max(2, ((float) $point['hpp'] / $chartMax) * 100) ?>%" title="HPP: <?= esc($currency($point['hpp'])) ?>"></span>
-                                        <span class="finance-bar operational" style="height:<?= max(2, ((float) $point['operational'] / $chartMax) * 100) ?>%" title="Operasional: <?= esc($currency($point['operational'])) ?>"></span>
-                                    </div><small><?= esc($point['label']) ?></small></div>
-                                <?php endforeach; ?>
+                    <article class="admin-stat">
+                        <span>Total Transaksi</span>
+                        <strong><?= number_format((int) ($summary['transactionCount'] ?? 0), 0, ',', '.') ?></strong>
+                        <small>Jumlah pesanan unik dalam hasil filter</small>
+                    </article>
+                    <article class="admin-stat">
+                        <span>Total Pendapatan</span>
+                        <strong class="stat-currency"><?= esc($currency($summary['revenue'] ?? 0)) ?></strong>
+                        <small><?= (int) ($summary['verifiedPaymentCount'] ?? 0) ?> catatan pembayaran terverifikasi</small>
+                    </article>
+                    <article class="admin-stat">
+                        <span>Pendapatan Berdasarkan Metode</span>
+                        <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
+                            <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px dashed var(--admin-line, #ebe4dc); padding-bottom: 5px;">
+                                <span style="font-size: 13px; color: #4a4036; font-weight: 500;">QRIS</span>
+                                <strong class="stat-currency" style="font-size: 18px; margin: 0; color: #2b231d;"><?= esc($currency($qrisAmount)) ?></strong>
                             </div>
-                        <?php endif; ?>
-                    </section>
-                    <section class="admin-panel-card">
-                        <div class="admin-card-heading"><div><p class="admin-eyebrow">KANAL PEMBAYARAN</p><h2>Pendapatan per metode</h2></div></div>
-                        <?php if ($methodRows === []): ?><p class="admin-empty">Belum ada catatan transaksi pada filter ini.</p><?php else: ?>
-                            <?php $methodMax = 1.0; foreach ($methodRows as $methodRow) $methodMax = max($methodMax, (float) ($methodRow['verified_amount'] ?? 0)); ?>
-                            <div class="finance-method-list"><?php foreach ($methodRows as $methodRow): ?>
-                                <div class="finance-method-item"><div><b><?= esc($methodRow['metode'] ?: 'Tidak diketahui') ?></b><strong><?= esc($currency($methodRow['verified_amount'] ?? 0)) ?></strong></div><div class="finance-method-track"><span style="width:<?= min(100, ((float) ($methodRow['verified_amount'] ?? 0) / $methodMax) * 100) ?>%"></span></div><small><?= (int) ($methodRow['record_count'] ?? 0) ?> catatan pembayaran</small></div>
-                            <?php endforeach; ?></div>
-                        <?php endif; ?>
-                    </section>
+                            <div style="display: flex; justify-content: space-between; align-items: baseline; padding-top: 2px;">
+                                <span style="font-size: 13px; color: #4a4036; font-weight: 500;">Transfer Bank</span>
+                                <strong class="stat-currency" style="font-size: 18px; margin: 0; color: #2b231d;"><?= esc($currency($transferAmount)) ?></strong>
+                            </div>
+                        </div>
+                    </article>
                 </div>
 
-                <section class="admin-panel-card">
-                    <div class="admin-card-heading"><div><p class="admin-eyebrow">BUKU TRANSAKSI</p><h2>Rincian pembayaran</h2><p class="finance-card-subtitle">Baris pembayaran awal berasal dari orders; pelunasan berasal dari order_payments. Jumlah pendapatan hanya memasukkan status Terverifikasi. Nominal pada baris yang belum terverifikasi adalah nilai pengajuan/tagihan, bukan uang yang sudah diterima.</p></div><span class="admin-topbar-tag"><?= count($transactions) ?> baris ditampilkan</span></div>
-                    <div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Tanggal</th><th>Kode pesanan</th><th>Pemesan</th><th>Jenis</th><th>Metode</th><th>Nominal</th><th>Status</th></tr></thead><tbody>
-                    <?php if ($transactions === []): ?><tr><td colspan="7" class="admin-empty-cell">Tidak ada transaksi pada filter yang dipilih.</td></tr><?php endif; ?>
-                    <?php foreach ($transactions as $transaction): ?><tr><td><?= ! empty($transaction['tanggal_transaksi']) ? esc(date('d/m/Y H:i', strtotime($transaction['tanggal_transaksi']))) : '-' ?></td><td><a class="table-link" href="<?= base_url('admin/pesanan/' . (int) $transaction['order_id']) ?>"><?= esc($transaction['kode_pesanan'] ?? '-') ?></a></td><td><?= esc($transaction['nama_pemesan'] ?? '-') ?></td><td><?= esc($transaction['jenis_transaksi'] ?? '-') ?></td><td><?= esc($transaction['metode'] ?? '-') ?></td><td><?= esc($currency($transaction['jumlah'] ?? 0)) ?></td><td><span class="<?= esc($statusClass($transaction['status_transaksi'] ?? '')) ?>"><?= esc($transaction['status_transaksi'] ?? '-') ?></span></td></tr><?php endforeach; ?>
-                    </tbody></table></div>
-                    <?php if (count($transactions) >= 500): ?><p class="detail-note">Tabel menampilkan maksimal 500 baris terbaru. Ringkasan nilai tetap dihitung dari seluruh data yang sesuai filter.</p><?php endif; ?>
-                </section>
+                <section class="admin-panel-card finance-book-card">
+                    <div class="admin-card-heading">
+                        <div>
+                            <p class="admin-eyebrow">BUKU TRANSAKSI</p>
+                            <h2>Rincian Transaksi & Pembayaran</h2>
+                            <p class="finance-card-subtitle">Baris pembayaran awal berasal dari orders; pelunasan berasal dari order_payments. Jumlah pendapatan hanya memasukkan status Terverifikasi.</p>
+                        </div>
+                        <span class="admin-topbar-tag">Menampilkan <?= (int) $pagination['startRow'] ?>–<?= (int) $pagination['endRow'] ?> dari <?= (int) $pagination['totalRows'] ?> transaksi</span>
+                    </div>
 
-                <section class="admin-panel-card">
-                    <div class="admin-card-heading"><div><p class="admin-eyebrow">PENCATATAN BIAYA AKTUAL</p><h2>Catat harga perolehan dan biaya usaha</h2><p class="finance-card-subtitle">HPP wajib dikaitkan dengan pesanan. Biaya operasional dapat dicatat tanpa pesanan.</p></div></div>
-                    <form class="finance-expense-form" method="post" action="<?= base_url('admin/laporan/biaya') ?>">
-                        <?= csrf_field() ?>
-                        <label>Jenis biaya<select name="jenis_biaya" id="expense-kind" required><option value="HPP">Harga Perolehan / HPP</option><option value="Operasional">Biaya Operasional</option></select></label>
-                        <label>Kategori<select name="kategori" required><?php foreach (['Bunga dan Bahan Dekorasi', 'Tenaga Kerja dan Pemasangan', 'Transportasi dan Pengiriman', 'Sewa Perlengkapan', 'Operasional Lainnya'] as $value): ?><option value="<?= esc($value) ?>"><?= esc($value) ?></option><?php endforeach; ?></select></label>
-                        <label class="finance-order-field">Pesanan terkait<select name="order_id" id="expense-order"><option value="">Pilih pesanan</option><?php foreach ($ordersForExpense as $expenseOrder): ?><option value="<?= (int) $expenseOrder['id'] ?>"><?= esc(($expenseOrder['kode_pesanan'] ?? ('#' . $expenseOrder['id'])) . ' · ' . ($expenseOrder['nama_pemesan'] ?? '')) ?></option><?php endforeach; ?></select><small>Wajib dipilih untuk biaya HPP.</small></label>
-                        <label>Jumlah biaya (Rp)<input type="number" name="jumlah" min="0.01" step="0.01" required placeholder="Contoh: 1250000"></label>
-                        <label>Tanggal biaya<input type="date" name="tanggal_biaya" value="<?= date('Y-m-d') ?>" required></label>
-                        <label class="finance-description-field">Keterangan<input type="text" name="deskripsi" maxlength="255" minlength="3" required placeholder="Contoh: pembelian bunga segar untuk acara"></label>
-                        <div class="finance-expense-actions"><button class="admin-button primary" type="submit">+ Simpan Biaya</button></div>
-                    </form>
-                </section>
+                    <!-- Filter Laporan yang Menyatu dengan Buku Transaksi -->
+                    <div class="finance-integrated-filter">
+                        <form method="get" action="<?= base_url('admin/laporan') ?>" id="form-finance-filter" class="finance-filter-form">
+                            <div class="filter-field-group">
+                                <label class="filter-col">
+                                    <span class="filter-label">Periode Laporan</span>
+                                    <select name="periode" id="finance-period" class="finance-select">
+                                        <option value="custom" <?= ($filters['periode'] ?? '') === 'custom' ? 'selected' : '' ?>>Rentang Tanggal</option>
+                                        <option value="mingguan" <?= ($filters['periode'] ?? '') === 'mingguan' ? 'selected' : '' ?>>Mingguan</option>
+                                        <option value="bulanan" <?= ($filters['periode'] ?? '') === 'bulanan' ? 'selected' : '' ?>>Bulanan</option>
+                                        <option value="tahunan" <?= ($filters['periode'] ?? '') === 'tahunan' ? 'selected' : '' ?>>Tahunan</option>
+                                        <option value="harian" <?= ($filters['periode'] ?? '') === 'harian' ? 'selected' : '' ?>>Harian</option>
+                                    </select>
+                                </label>
 
-                <section class="admin-panel-card">
-                    <div class="admin-card-heading"><div><p class="admin-eyebrow">BUKU PENGELUARAN</p><h2>Riwayat harga perolehan dan biaya aktual</h2></div></div>
-                    <div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Tanggal</th><th>Jenis / kategori</th><th>Pesanan</th><th>Keterangan</th><th>Jumlah</th><th>Status</th><th>Aksi</th></tr></thead><tbody>
-                    <?php if ($expenseRows === []): ?><tr><td colspan="7" class="admin-empty-cell">Belum ada biaya yang dicatat pada periode ini.</td></tr><?php endif; ?>
-                    <?php foreach ($expenseRows as $expense): ?><tr><td><?= esc(date('d/m/Y', strtotime($expense['tanggal_biaya']))) ?></td><td><b><?= esc($expense['jenis_biaya']) ?></b><small><?= esc($expense['kategori']) ?></small></td><td><?= esc($expense['kode_pesanan'] ?? '-') ?></td><td><?= esc($expense['deskripsi']) ?><?php if (($expense['status'] ?? '') === 'Dibatalkan' && ! empty($expense['alasan_pembatalan'])): ?><small>Alasan: <?= esc($expense['alasan_pembatalan']) ?></small><?php endif; ?></td><td><?= esc($currency($expense['jumlah'])) ?></td><td><span class="<?= ($expense['status'] ?? '') === 'Aktif' ? 'status good' : 'status muted' ?>"><?= esc($expense['status']) ?></span></td><td><?php if (($expense['status'] ?? '') === 'Aktif'): ?><form method="post" action="<?= base_url('admin/laporan/biaya/' . (int) $expense['id'] . '/batalkan') ?>" class="finance-void-form"><?= csrf_field() ?><input type="text" name="alasan_pembatalan" minlength="5" maxlength="500" placeholder="Alasan pembatalan" required><button class="table-button" type="submit" onclick="return confirm('Batalkan catatan biaya ini? Catatan tidak akan dihapus.')">Batalkan</button></form><?php else: ?><small>Catatan dipertahankan</small><?php endif; ?></td></tr><?php endforeach; ?>
-                    </tbody></table></div>
-                    <p class="detail-note">Catatan biaya yang dibatalkan tidak masuk perhitungan HPP atau operasional, tetapi tetap tersimpan untuk jejak audit. Maksimal 300 catatan terbaru ditampilkan.</p>
+                                <div class="filter-period-inputs">
+                                    <label id="wrap-from" class="period-input-wrap">
+                                        <span class="filter-label">Dari Tanggal</span>
+                                        <input type="date" name="tanggal_mulai" id="input-from" value="<?= esc($filters['tanggal_mulai'] ?? date('Y-m-01')) ?>" class="finance-input">
+                                    </label>
+
+                                    <label id="wrap-to" class="period-input-wrap">
+                                        <span class="filter-label">Sampai Tanggal</span>
+                                        <input type="date" name="tanggal_selesai" id="input-to" value="<?= esc($filters['tanggal_selesai'] ?? date('Y-m-d')) ?>" class="finance-input">
+                                    </label>
+
+                                    <label id="wrap-week" class="period-input-wrap" style="display:none;">
+                                        <span class="filter-label">Pilih Minggu</span>
+                                        <input type="week" name="minggu" id="input-week" value="<?= esc($filters['minggu'] ?? date('o-\WW')) ?>" class="finance-input">
+                                    </label>
+
+                                    <label id="wrap-month" class="period-input-wrap" style="display:none;">
+                                        <span class="filter-label">Pilih Bulan</span>
+                                        <input type="month" name="bulan" id="input-month" value="<?= esc($filters['bulan'] ?? date('Y-m')) ?>" class="finance-input">
+                                    </label>
+
+                                    <label id="wrap-year" class="period-input-wrap" style="display:none;">
+                                        <span class="filter-label">Pilih Tahun</span>
+                                        <input type="number" name="tahun" id="input-year" min="2000" max="2100" value="<?= (int) ($filters['tahun'] ?? date('Y')) ?>" class="finance-input">
+                                    </label>
+
+                                    <label id="wrap-date" class="period-input-wrap" style="display:none;">
+                                        <span class="filter-label">Pilih Tanggal</span>
+                                        <input type="date" name="tanggal" id="input-date" value="<?= esc($filters['tanggal'] ?? date('Y-m-d')) ?>" class="finance-input">
+                                    </label>
+                                </div>
+
+                                <label class="filter-col">
+                                    <span class="filter-label">Metode Pembayaran</span>
+                                    <select name="kanal" class="finance-select">
+                                        <option value="">Semua Metode</option>
+                                        <?php foreach (['QRIS', 'Transfer Bank', 'Bayar di Tempat Acara', 'Tidak diketahui'] as $value): ?>
+                                            <option value="<?= esc($value) ?>" <?= ($filters['kanal'] ?? '') === $value ? 'selected' : '' ?>><?= esc($value) ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
+                                </label>
+
+                                <label class="filter-col">
+                                    <span class="filter-label">Status Transaksi</span>
+                                    <select name="status_transaksi" class="finance-select">
+                                        <option value="">Semua Status</option>
+                                        <?php foreach (['Terverifikasi', 'Belum Bayar', 'Menunggu Verifikasi', 'Ditolak', 'Menunggu Pembayaran di Tempat'] as $value): ?>
+                                            <option value="<?= esc($value) ?>" <?= ($filters['status_transaksi'] ?? '') === $value ? 'selected' : '' ?>><?= esc($value) ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
+                                </label>
+                            </div>
+
+                            <div class="filter-btn-group">
+                                <button class="admin-button primary filter-submit-btn" type="submit">Terapkan Filter</button>
+                                <a class="admin-button secondary filter-reset-btn" href="<?= base_url('admin/laporan') ?>">Reset Filter</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="admin-table-wrap">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Tanggal</th>
+                                    <th>Kode Pesanan</th>
+                                    <th>Pemesan</th>
+                                    <th>Jenis</th>
+                                    <th>Metode</th>
+                                    <th>Nominal</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php if ($transactions === []): ?>
+                                    <tr><td colspan="7" class="admin-empty-cell">Tidak ada transaksi pada filter yang dipilih.</td></tr>
+                                <?php endif; ?>
+                                <?php foreach ($transactions as $transaction): ?>
+                                    <tr>
+                                        <td><?= ! empty($transaction['tanggal_transaksi']) ? esc(date('d/m/Y H:i', strtotime($transaction['tanggal_transaksi']))) : '-' ?></td>
+                                        <td><a class="table-link" href="<?= base_url('admin/pesanan/' . (int) $transaction['order_id']) ?>"><?= esc($transaction['kode_pesanan'] ?? '-') ?></a></td>
+                                        <td><?= esc($transaction['nama_pemesan'] ?? '-') ?></td>
+                                        <td><?= esc($transaction['jenis_transaksi'] ?? '-') ?></td>
+                                        <td><?= esc($transaction['metode'] ?? '-') ?></td>
+                                        <td><?= esc($currency($transaction['jumlah'] ?? 0)) ?></td>
+                                        <td><span class="<?= esc($statusClass($transaction['status_transaksi'] ?? '')) ?>"><?= esc($transaction['status_transaksi'] ?? '-') ?></span></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                    <?php if ($pagination['totalPages'] > 1): ?>
+                        <div class="finance-pagination">
+                            <div class="pagination-info">
+                                Halaman <b><?= (int) $pagination['currentPage'] ?></b> dari <b><?= (int) $pagination['totalPages'] ?></b> (Total <?= (int) $pagination['totalRows'] ?> transaksi)
+                            </div>
+                            <div class="pagination-controls">
+                                <?php $queryParams = $filterQuery; ?>
+                                <?php if ($pagination['hasPrev']): ?>
+                                    <?php $queryParams['page'] = $pagination['prevPage']; ?>
+                                    <a href="<?= base_url('admin/laporan?' . http_build_query($queryParams)) ?>" class="page-link prev-link">‹ Sebelumnya</a>
+                                <?php else: ?>
+                                    <span class="page-link disabled">‹ Sebelumnya</span>
+                                <?php endif; ?>
+
+                                <div class="page-numbers">
+                                    <?php
+                                    $startP = max(1, $pagination['currentPage'] - 2);
+                                    $endP   = min($pagination['totalPages'], $pagination['currentPage'] + 2);
+                                    if ($startP > 1) {
+                                        $queryParams['page'] = 1;
+                                        echo '<a href="' . base_url('admin/laporan?' . http_build_query($queryParams)) . '" class="page-num">1</a>';
+                                        if ($startP > 2) echo '<span class="page-dots">…</span>';
+                                    }
+                                    for ($p = $startP; $p <= $endP; $p++) {
+                                        $queryParams['page'] = $p;
+                                        if ($p === $pagination['currentPage']) {
+                                            echo '<span class="page-num active">' . $p . '</span>';
+                                        } else {
+                                            echo '<a href="' . base_url('admin/laporan?' . http_build_query($queryParams)) . '" class="page-num">' . $p . '</a>';
+                                        }
+                                    }
+                                    if ($endP < $pagination['totalPages']) {
+                                        if ($endP < $pagination['totalPages'] - 1) echo '<span class="page-dots">…</span>';
+                                        $queryParams['page'] = $pagination['totalPages'];
+                                        echo '<a href="' . base_url('admin/laporan?' . http_build_query($queryParams)) . '" class="page-num">' . $pagination['totalPages'] . '</a>';
+                                    }
+                                    ?>
+                                </div>
+
+                                <?php if ($pagination['hasNext']): ?>
+                                    <?php $queryParams['page'] = $pagination['nextPage']; ?>
+                                    <a href="<?= base_url('admin/laporan?' . http_build_query($queryParams)) ?>" class="page-link next-link">Berikutnya ›</a>
+                                <?php else: ?>
+                                    <span class="page-link disabled">Berikutnya ›</span>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
                 </section>
             
             <?php elseif ($section === 'shipping-zones'): ?>
@@ -616,19 +749,29 @@ unset($viewScope);
 const adminToggle = document.getElementById('admin-menu-toggle');
 const adminSidebar = document.getElementById('admin-sidebar');
 if (adminToggle && adminSidebar) adminToggle.addEventListener('click', () => adminSidebar.classList.toggle('open'));
-const expenseKind = document.getElementById('expense-kind');
-const expenseOrder = document.getElementById('expense-order');
-const updateExpenseOrderRequirement = () => {
-    if (!expenseKind || !expenseOrder) return;
-    const hppSelected = expenseKind.value === 'HPP';
-    expenseOrder.required = hppSelected;
-    expenseOrder.disabled = false;
-    const field = expenseOrder.closest('.finance-order-field');
-    if (field) field.classList.toggle('is-optional', !hppSelected);
-};
-if (expenseKind) {
-    expenseKind.addEventListener('change', updateExpenseOrderRequirement);
-    updateExpenseOrderRequirement();
+
+// Dynamic period selector for Buku Transaksi filter
+const periodSelect = document.getElementById('finance-period');
+if (periodSelect) {
+    const wrapFrom  = document.getElementById('wrap-from');
+    const wrapTo    = document.getElementById('wrap-to');
+    const wrapWeek  = document.getElementById('wrap-week');
+    const wrapMonth = document.getElementById('wrap-month');
+    const wrapYear  = document.getElementById('wrap-year');
+    const wrapDate  = document.getElementById('wrap-date');
+
+    const togglePeriodInputs = () => {
+        const val = periodSelect.value;
+        if (wrapFrom)  wrapFrom.style.display  = val === 'custom'   ? 'grid' : 'none';
+        if (wrapTo)    wrapTo.style.display    = val === 'custom'   ? 'grid' : 'none';
+        if (wrapWeek)  wrapWeek.style.display  = val === 'mingguan' ? 'grid' : 'none';
+        if (wrapMonth) wrapMonth.style.display = val === 'bulanan'  ? 'grid' : 'none';
+        if (wrapYear)  wrapYear.style.display  = val === 'tahunan'  ? 'grid' : 'none';
+        if (wrapDate)  wrapDate.style.display  = val === 'harian'   ? 'grid' : 'none';
+    };
+
+    periodSelect.addEventListener('change', togglePeriodInputs);
+    togglePeriodInputs();
 }
 
 const packageCategory = document.getElementById('package-category');

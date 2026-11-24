@@ -114,14 +114,12 @@ h2 {
     font-weight: 700;
 }
 
-/* Package Layout (Sidebar Filter + Cards Grid) */
+/* Package Layout (Full-width Cards Grid) */
 .package-layout {
     max-width: 1360px;
     margin: auto;
-    padding: 50px max(24px, 8vw) 85px;
-    display: grid;
-    grid-template-columns: 260px 1fr;
-    gap: 50px;
+    padding: 40px max(24px, 8vw) 70px;
+    display: block;
 }
 
 .filter-panel {

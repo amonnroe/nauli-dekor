@@ -1,12 +1,7 @@
 <?php
 /**
  * Data katalog dikirim dari Packages::index().
- * Deklarasi ini membantu Intelephense mengenali variabel view CodeIgniter.
  *
- * @var string $category
- * @var string $type
- * @var array<int, array{value:string,label:string,subtitle:string}> $typeOptions
- * @var string $selectedTypeLabel
  * @var string $pageTitle
  * @var string $packageDescription
  * @var array<int, array<string, mixed>> $packages
@@ -39,39 +34,11 @@
             </nav>
         </section>
 
-        <section class="category-tabs" aria-label="Jenis layanan">
-            <a class="<?= $category === 'pernikahan' ? 'active' : '' ?>" href="<?= base_url('paket-dekorasi?kategori=pernikahan') ?>"><span>01</span> Paket Dekorasi Pernikahan</a>
-            <a class="<?= $category === 'duka' ? 'active' : '' ?>" href="<?= base_url('paket-dekorasi?kategori=duka') ?>"><span>02</span> Paket Dekorasi Rumah Duka</a>
-            <a href="#tambahan"><span>03</span> Perintilan Tambahan</a>
-        </section>
-
         <section class="package-layout">
-            <aside class="filter-panel">
-                <p class="filter-title">Jenis paket</p>
-                <div class="package-types" data-category="<?= esc($category) ?>">
-                    <?php foreach ($typeOptions as $index => $option): ?>
-                        <button
-                            class="type-button <?= $type === $option['value'] ? 'active' : '' ?>"
-                            type="button"
-                            data-type="<?= esc($option['value']) ?>"
-                        >
-                            <span><?= esc(sprintf('%02d', $index + 1)) ?></span>
-                            <b><?= esc($option['label']) ?></b>
-                            <small><?= esc($option['subtitle']) ?></small>
-                        </button>
-                    <?php endforeach; ?>
-                </div>
-                <div class="help-box">
-                    <span>✦</span>
-                    <p><b>Butuh bantuan?</b><br>Hubungi kami untuk konsultasi paket dekorasi yang paling sesuai.</p>
-                    <a href="#kontak">Hubungi kami →</a>
-                </div>
-            </aside>
-
             <div class="packages-content">
                 <div class="content-top">
                     <div>
-                        <p class="eyebrow" id="type-label"><?= $category === 'pernikahan' ? 'PAKET PERNIKAHAN' : 'PAKET RUMAH DUKA' ?></p>
+                        <p class="eyebrow" id="type-label">PAKET DEKORASI</p>
                         <h2 id="packages-title"><?= esc($pageTitle) ?></h2>
                     </div>
                     <p class="result-count"><b id="result-number"><?= count($packages) ?></b> pilihan tersedia</p>
@@ -84,7 +51,7 @@
                             <div class="card-content">
                                 <p class="card-type">INFORMASI PAKET</p>
                                 <h3>Belum ada paket tersedia</h3>
-                                <p class="card-subtitle">Belum ada data paket aktif untuk kategori dan jenis ini.</p>
+                                <p class="card-subtitle">Belum ada data paket aktif saat ini.</p>
                             </div>
                         </article>
                     <?php else: ?>
@@ -105,7 +72,7 @@
                                     <?php endif; ?>
                                 >
                                     <span class="card-number"><?= esc(sprintf('%02d', $index + 1)) ?></span>
-                                    <span class="tag"><?= esc($selectedTypeLabel) ?></span>
+                                    <span class="tag">Paket Dekorasi</span>
                                 </div>
                                 <div class="card-content">
                                     <p class="card-type">PAKET DEKORASI</p>
@@ -128,8 +95,8 @@
 
         <section class="additional" id="tambahan">
             <div>
-                <p class="eyebrow">PERLENGKAPAN DEKORASI</p>
-                <h2>Lengkapi momen Anda</h2>
+                <p class="eyebrow">DEKORASI TAMBAHAN</p>
+                <h2>Perintilan Tambahan</h2>
                 <p>Tambahkan sentuhan yang membuat dekorasi Anda semakin personal dan berkesan.</p>
             </div>
             <div class="addon-list">
@@ -137,7 +104,7 @@
                     <span>Belum ada perlengkapan tersedia.</span>
                 <?php else: ?>
                     <?php foreach ($extras as $extra): ?>
-                        <span><?= esc($extra['nama']) ?></span>
+                        <span><?= esc($extra['nama']) ?> · Rp <?= number_format((float) $extra['harga'], 0, ',', '.') ?></span>
                     <?php endforeach; ?>
                 <?php endif; ?>
             </div>
@@ -151,19 +118,6 @@
     </footer>
 
     <script>
-        const catalogUrl = <?= json_encode(base_url('paket-dekorasi')) ?>;
-        const category = <?= json_encode($category) ?>;
-
-        document.querySelectorAll('.type-button').forEach((button) => {
-            button.addEventListener('click', () => {
-                const params = new URLSearchParams({
-                    kategori: category,
-                    tipe: button.dataset.type
-                });
-                window.location.href = `${catalogUrl}?${params.toString()}`;
-            });
-        });
-
         document.querySelector('.menu-toggle')?.addEventListener('click', () => {
             document.querySelector('.main-nav')?.classList.toggle('open');
         });

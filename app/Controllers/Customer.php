@@ -205,8 +205,34 @@ class Customer extends BaseController
                 ->findAll();
         }
 
+        if ($page === 'cart' || $page === 'booking') {
+            $mainPackageId = null;
+            $existingExtraIds = [];
+
+            foreach ($items as $item) {
+                if (($item['type'] ?? '') === 'package') {
+                    $mainPackageId = (int) $item['id'];
+                } elseif (($item['type'] ?? '') === 'extra') {
+                    $existingExtraIds[] = (int) $item['id'];
+                }
+            }
+
+            $recommendations = [];
+            if ($mainPackageId !== null) {
+                $apriori = new \App\Libraries\AprioriService();
+                $recommendations = $apriori->getRecommendationsForPackage($mainPackageId, $existingExtraIds, 4);
+
+                if ($recommendations === [] && db_connect()->table('aturan_asosiasi_apriori')->countAllResults() === 0) {
+                    $apriori->trainRules();
+                    $recommendations = $apriori->getRecommendationsForPackage($mainPackageId, $existingExtraIds, 4);
+                }
+            }
+            $data['crossSellingItems'] = $recommendations;
+        }
+
         return view('customer/flow', $data);
     }
+    
 
 
     /** Validasi bukti pembayaran yang diunggah pelanggan. */
@@ -1328,6 +1354,12 @@ class Customer extends BaseController
 
             if ($db->transStatus() === false || $db->transCommit() === false) {
                 throw new \RuntimeException('Transaksi database gagal.');
+            }
+
+            try {
+                (new \App\Libraries\AprioriService())->trainRules();
+            } catch (\Throwable $e) {
+                log_message('warning', 'Pembaruan aturan Apriori tertunda: ' . $e->getMessage());
             }
 
             session()->remove(['cart', 'checkout_token', 'payment_scheme', 'payment_channel', 'booking_draft']);

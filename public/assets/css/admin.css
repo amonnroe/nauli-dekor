@@ -883,20 +883,179 @@ body {
     line-height: 1.65;
 }
 
-.finance-filter-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 14px;
-    align-items: end;
+/* Integrated Finance Filter Toolbar inside Buku Transaksi */
+.finance-integrated-filter {
+    background: #fdfbf7;
+    border: 1px solid var(--admin-line, #ebe4dc);
+    border-radius: 4px;
+    padding: 18px 20px;
+    margin: 18px 0 22px;
 }
 
-.finance-filter-grid label,
-.finance-expense-form label {
+.finance-filter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.filter-field-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: flex-end;
+}
+
+.filter-col {
     display: grid;
-    gap: 7px;
-    color: #4a4138;
-    font-size: 13px;
+    gap: 6px;
+    flex: 1 1 180px;
+    min-width: 160px;
+}
+
+.filter-label {
+    font-size: 11px;
     font-weight: 700;
+    color: #796f66;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.filter-period-inputs {
+    display: flex;
+    gap: 10px;
+    flex: 2 1 320px;
+}
+
+.period-input-wrap {
+    display: grid;
+    gap: 6px;
+    flex: 1 1 140px;
+    min-width: 130px;
+}
+
+.finance-select,
+.finance-input {
+    width: 100%;
+    min-height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #dcd4c9;
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: #2b231d;
+    box-sizing: border-box;
+    transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+.finance-select:focus,
+.finance-input:focus {
+    border-color: #bd922b;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(189, 146, 43, 0.15);
+}
+
+.filter-btn-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 10px;
+    border-top: 1px dashed #ebe4dc;
+}
+
+.filter-submit-btn {
+    padding: 9px 22px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.filter-reset-btn {
+    padding: 9px 18px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Finance Table Pagination */
+.finance-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-top: 1px solid var(--admin-line, #ebe4dc);
+    background: #fff;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.pagination-info {
+    font-size: 13px;
+    color: #796f66;
+}
+
+.pagination-info b {
+    color: #2b231d;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.page-link,
+.page-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 34px;
+    height: 34px;
+    padding: 0 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #ddd3c7;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #4a4138;
+    transition: all .15s ease;
+}
+
+.page-link:hover,
+.page-num:hover {
+    border-color: #bd922b;
+    color: #bd922b;
+    background: #fdfbf7;
+}
+
+.page-num.active {
+    background: #bd922b;
+    border-color: #bd922b;
+    color: #ffffff;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+.page-link.disabled {
+    opacity: 0.45;
+    border-color: #e5ded5;
+    background: #faf7f2;
+    color: #a09589;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.page-numbers {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.page-dots {
+    color: #a09589;
+    padding: 0 4px;
+    font-size: 13px;
 }
 
 .finance-expense-form {
@@ -961,8 +1120,8 @@ body {
     .finance-kpi-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .finance-filter-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .filter-field-group {
+        gap: 12px;
     }
 }
 
@@ -1014,9 +1173,17 @@ body {
     .admin-stat-grid,
     .admin-status-grid,
     .finance-kpi-grid,
-    .finance-filter-grid,
     .finance-expense-form {
         grid-template-columns: 1fr;
+    }
+    .filter-field-group,
+    .filter-period-inputs {
+        flex-direction: column;
+    }
+    .filter-col,
+    .period-input-wrap {
+        width: 100%;
+        min-width: 0;
     }
     .admin-form-grid {
         grid-template-columns: 1fr;

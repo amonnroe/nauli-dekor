@@ -58,7 +58,158 @@ $pageTitles = [
 ];
 $title = $pageTitles[$page] ?? 'Nauli Dekor';
 ?>
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title><?= $title ?> | Nauli Dekor</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="<?= base_url('assets/css/customer.css') ?>"><?php if ($page === 'invoice'): ?><link rel="stylesheet" href="<?= base_url('assets/css/checkout-invoice.css') ?>"><?php endif; ?><?php if (in_array($page, ['payment', 'invoice', 'history', 'settlement'], true)): ?><link rel="stylesheet" href="<?= base_url('assets/css/payment-proof.css') ?>"><?php endif; ?></head>
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title><?= $title ?> | Nauli Dekor</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="<?= base_url('assets/css/customer.css') ?>"><?php if ($page === 'invoice'): ?><link rel="stylesheet" href="<?= base_url('assets/css/checkout-invoice.css') ?>"><?php endif; ?><?php if (in_array($page, ['payment', 'invoice', 'history', 'settlement'], true)): ?><link rel="stylesheet" href="<?= base_url('assets/css/payment-proof.css') ?>"><?php endif; ?>
+<style>
+.apriori-box {
+    margin-top: 1.5rem;
+    padding: 1.25rem 1.5rem;
+    background: #faf7f2;
+    border: 1px solid #e6dfd5;
+    border-radius: 16px;
+    width: fit-content;
+    max-width: 100%;
+}
+.apriori-addon-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.apriori-addon-left {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+}
+.apriori-addon-icon {
+    color: #b88a44;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+.apriori-addon-left b {
+    display: block;
+    font-size: 0.95rem;
+    color: #2c2520;
+    margin-bottom: 0.15rem;
+}
+.apriori-addon-left p {
+    font-size: 0.85rem;
+    color: #6e6359;
+    margin: 0;
+}
+.apriori-addon-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #8c6d46;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.apriori-addon-link:hover {
+    text-decoration: underline;
+}
+.apriori-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #e6dfd5;
+}
+.apriori-card {
+    width: 235px;
+    flex: 0 0 235px;
+    background: #ffffff;
+    border: 1px solid #eae4dc;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.apriori-card-img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    background: #f4f0ea;
+    display: block;
+}
+.apriori-card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+.apriori-badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #8c6d46;
+    background: #f3ede4;
+    padding: 0.2rem 0.55rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    width: fit-content;
+}
+.apriori-card h4 {
+    font-size: 1rem;
+    color: #2c2520;
+    margin: 0 0 0.35rem;
+}
+.apriori-desc {
+    font-size: 0.8rem;
+    color: #7d7268;
+    margin: 0 0 0.85rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.apriori-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.75rem;
+    border-top: 1px solid #f0ece6;
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+}
+.apriori-meta strong {
+    color: #2c2520;
+}
+.apriori-meta span {
+    font-size: 0.75rem;
+    color: #7d7268;
+}
+.apriori-btn {
+    width: 100%;
+    padding: 0.55rem 0.75rem;
+    background: #2c2520;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.apriori-btn:hover {
+    background: #463b33;
+}
+@media (max-width: 640px) {
+    .apriori-box {
+        width: 100%;
+    }
+    .apriori-addon-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    .apriori-card {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+}
+</style></head>
 <body><?= view('partials/navbar', ['activeNav' => $page === 'extras' ? 'extras' : (in_array($page, ['cart', 'payment', 'booking'], true) ? 'cart' : ($page === 'account' || $page === 'history' ? 'account' : ''))]) ?>
 <?php if ($page === 'extras'): ?>
 <main>
@@ -141,83 +292,130 @@ $title = $pageTitles[$page] ?? 'Nauli Dekor';
     <?php endforeach; ?>
 
     <div class="cart-layout">
-        <section class="cart-list">
-            <?php if (empty($cart['items'])): ?>
-                <p>Keranjang Anda masih kosong. <a href="<?= base_url('paket-dekorasi') ?>">Lihat katalog paket</a></p>
-            <?php endif; ?>
+                <section class="cart-list">
+                    <?php if (empty($cart['items'])): ?>
+                        <p>Keranjang Anda masih kosong. <a href="<?= base_url('paket-dekorasi') ?>">Lihat katalog paket</a></p>
+                    <?php endif; ?>
 
-            <?php foreach ($cart['items'] as $item): ?>
-                <?php
-                $itemKey = (string) ($item['key'] ?? '');
-                $quantity = (int) ($item['jumlah'] ?? 1);
-                $price = (float) ($item['harga'] ?? 0);
-                $lineTotal = $price * $quantity;
-                $isExtra = ($item['type'] ?? '') === 'extra';
-                ?>
-                <article class="cart-item">
-                    <div class="cart-thumb"></div>
-                    <div>
-                        <p class="eyebrow"><?= $isExtra ? 'TAMBAHAN DEKORASI' : 'PAKET DEKORASI' ?></p>
-                        <h3><?= esc($item['nama'] ?? '') ?></h3>
-                        <p class="cart-item-price-line" data-key="<?= esc($itemKey, 'attr') ?>">Rp <?= number_format($price, 0, ',', '.') ?> × <span class="cart-item-qty-display"><?= $quantity ?></span> = <span class="cart-item-line-total">Rp <?= number_format($lineTotal, 0, ',', '.') ?></span></p>
+                    <?php foreach ($cart['items'] as $item): ?>
+                        <?php
+                        $itemKey = (string) ($item['key'] ?? '');
+                        $quantity = (int) ($item['jumlah'] ?? 1);
+                        $price = (float) ($item['harga'] ?? 0);
+                        $lineTotal = $price * $quantity;
+                        $isExtra = ($item['type'] ?? '') === 'extra';
+                        ?>
+                        <article class="cart-item">
+                            <div class="cart-thumb"></div>
+                            <div>
+                                <p class="eyebrow"><?= $isExtra ? 'TAMBAHAN DEKORASI' : 'PAKET DEKORASI' ?></p>
+                                <h3><?= esc($item['nama'] ?? '') ?></h3>
+                                <p class="cart-item-price-line" data-key="<?= esc($itemKey, 'attr') ?>">Rp <?= number_format($price, 0, ',', '.') ?> × <span class="cart-item-qty-display"><?= $quantity ?></span> = <span class="cart-item-line-total">Rp <?= number_format($lineTotal, 0, ',', '.') ?></span></p>
 
-                        <?php if ($isExtra): ?>
-                            <div class="cart-qty-wrap">
-                                <form method="post" action="<?= base_url('keranjang/update/' . rawurlencode($itemKey)) ?>" class="cart-qty-form" data-key="<?= esc($itemKey, 'attr') ?>" data-price="<?= $price ?>" data-stock="<?= (int) ($item['stok'] ?? 1) ?>">
-                                    <?= csrf_field() ?>
-                                    <div class="cart-qty-stepper">
-                                        <button type="button" class="btn-qty-step minus" aria-label="Kurangi jumlah" <?= $quantity <= 1 ? 'disabled' : '' ?>>−</button>
-                                        <span class="cart-qty-display"><?= $quantity ?></span>
-                                        <input
-                                            name="jumlah"
-                                            type="hidden"
-                                            class="cart-qty-input"
-                                            min="1"
-                                            max="<?= (int) ($item['stok'] ?? 1) ?>"
-                                            value="<?= $quantity ?>"
-                                        >
-                                        <button type="button" class="btn-qty-step plus" aria-label="Tambah jumlah" <?= $quantity >= (int) ($item['stok'] ?? 1) ? 'disabled' : '' ?>>+</button>
+                                <?php if ($isExtra): ?>
+                                    <div class="cart-qty-wrap">
+                                        <form method="post" action="<?= base_url('keranjang/update/' . rawurlencode($itemKey)) ?>" class="cart-qty-form" data-key="<?= esc($itemKey, 'attr') ?>" data-price="<?= $price ?>" data-stock="<?= (int) ($item['stok'] ?? 1) ?>">
+                                            <?= csrf_field() ?>
+                                            <div class="cart-qty-stepper">
+                                                <button type="button" class="btn-qty-step minus" aria-label="Kurangi jumlah" <?= $quantity <= 1 ? 'disabled' : '' ?>>−</button>
+                                                <span class="cart-qty-display"><?= $quantity ?></span>
+                                                <input
+                                                    name="jumlah"
+                                                    type="hidden"
+                                                    class="cart-qty-input"
+                                                    min="1"
+                                                    max="<?= (int) ($item['stok'] ?? 1) ?>"
+                                                    value="<?= $quantity ?>"
+                                                >
+                                                <button type="button" class="btn-qty-step plus" aria-label="Tambah jumlah" <?= $quantity >= (int) ($item['stok'] ?? 1) ? 'disabled' : '' ?>>+</button>
+                                            </div>
+                                        </form>
+                                        <span class="cart-stock-hint">Stok: <?= (int) ($item['stok'] ?? 0) ?></span>
                                     </div>
-                                </form>
-                                <span class="cart-stock-hint">Stok: <?= (int) ($item['stok'] ?? 0) ?></span>
+                                <?php else: ?>
+                                    <p>Jumlah paket: 1</p>
+                                <?php endif; ?>
                             </div>
-                        <?php else: ?>
-                            <p>Jumlah paket: 1</p>
+                            <form method="post" action="<?= base_url('keranjang/hapus/' . rawurlencode($itemKey)) ?>">
+                                <?= csrf_field() ?>
+                                <button class="remove" type="submit" aria-label="Hapus <?= esc($item['nama'] ?? 'item') ?> dari keranjang">×</button>
+                            </form>
+                        </article>
+                    <?php endforeach; ?>
+
+                    <section class="apriori-box">
+                        <div class="apriori-addon-header">
+                            <div class="apriori-addon-left">
+                                <span class="apriori-addon-icon">✦</span>
+                                <div>
+                                    <b>Tambahkan sentuhan personal</b>
+                                    <p>Lengkapi pesanan Anda dengan perintilan dekorasi.</p>
+                                </div>
+                            </div>
+                            <a href="<?= base_url('tambahan-dekorasi') ?>" class="apriori-addon-link">Pilih tambahan →</a>
+                        </div>
+
+                        <?php if (! empty($crossSellingItems)): ?>
+                            <div class="apriori-grid">
+                                <?php foreach ($crossSellingItems as $rec): ?>
+                                    <?php
+                                    $recImgName = ! empty($rec['gambar']) ? basename((string) $rec['gambar']) : '';
+                                    $recImgUrl = $recImgName !== '' ? base_url('assets/images/' . rawurlencode($recImgName)) : '';
+                                    ?>
+                                    <article class="apriori-card">
+                                        <?php if ($recImgUrl !== ''): ?>
+                                            <img src="<?= esc($recImgUrl, 'attr') ?>"
+                                                 alt="<?= esc($rec['nama']) ?>"
+                                                 class="apriori-card-img"
+                                                 loading="lazy"
+                                                 onerror="this.style.display='none'">
+                                        <?php endif; ?>
+
+                                        <div class="apriori-card-body">
+                                            <div>
+                                                <span class="apriori-badge">
+                                                    <?= number_format((float) $rec['nilai_confidence'], 0) ?>% pelanggan memilih ini
+                                                </span>
+                                                <h4><?= esc($rec['nama']) ?></h4>
+                                                <p class="apriori-desc"><?= esc($rec['deskripsi'] ?? '') ?></p>
+                                            </div>
+
+                                            <div>
+                                                <div class="apriori-meta">
+                                                    <strong>Rp <?= number_format((float) $rec['harga'], 0, ',', '.') ?></strong>
+                                                    <span>Stok: <?= (int) $rec['stok'] ?></span>
+                                                </div>
+
+                                                <form action="<?= base_url('keranjang/tambahan/' . (int) $rec['id']) ?>" method="post">
+                                                    <?= csrf_field() ?>
+                                                    <button type="submit" class="apriori-btn">+ Tambahkan ke Pesanan</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </article>
+                                <?php endforeach; ?>
+                            </div>
                         <?php endif; ?>
+                    </section>
+                </section>
+
+                <aside class="summary">
+                    <p class="eyebrow">RINGKASAN PESANAN</p>
+                    <div><span>Jumlah item</span><b id="cart-summary-count"><?= (int) $cart['count'] ?></b></div>
+                    <hr>
+                    <div class="total">
+                        <span>Total sementara</span>
+                        <b id="cart-summary-total">Rp <?= number_format((float) $cart['total'], 0, ',', '.') ?></b>
                     </div>
-                    <form method="post" action="<?= base_url('keranjang/hapus/' . rawurlencode($itemKey)) ?>">
-                        <?= csrf_field() ?>
-                        <button class="remove" type="submit" aria-label="Hapus <?= esc($item['nama'] ?? 'item') ?> dari keranjang">×</button>
-                    </form>
-                </article>
-            <?php endforeach; ?>
-
-            <article class="cart-addon">
-                <span>✦</span>
-                <div>
-                    <b>Tambahkan sentuhan personal</b>
-                    <p>Lengkapi pesanan Anda dengan perintilan dekorasi.</p>
-                </div>
-                <a href="<?= base_url('tambahan-dekorasi') ?>">Pilih tambahan →</a>
-            </article>
-        </section>
-
-        <aside class="summary">
-            <p class="eyebrow">RINGKASAN PESANAN</p>
-            <div><span>Jumlah item</span><b id="cart-summary-count"><?= (int) $cart['count'] ?></b></div>
-            <hr>
-            <div class="total">
-                <span>Total sementara</span>
-                <b id="cart-summary-total">Rp <?= number_format((float) $cart['total'], 0, ',', '.') ?></b>
+                    <?php if (! empty($cart['items'])): ?>
+                        <a class="primary" href="<?= base_url('booking') ?>">Lanjutkan ke Form Booking <span>→</span></a>
+                    <?php endif; ?>
+                    <p class="note">Biaya pengiriman akan dihitung setelah lokasi acara diisi.</p>
+                </aside>
             </div>
-            <?php if (! empty($cart['items'])): ?>
-                <a class="primary" href="<?= base_url('booking') ?>">Lanjutkan ke Form Booking <span>→</span></a>
-            <?php endif; ?>
-            <p class="note">Biaya pengiriman akan dihitung setelah lokasi acara diisi.</p>
-        </aside>
-    </div>
 </main>
-<?php elseif ($page === 'payment'): ?>
+
+    <?php elseif ($page === 'payment'): ?>
 <?php
     $bookingOngkos = max(0, (float) ($bookingDraft['ongkos_kirim'] ?? 0));
     $paymentTotal = (float) ($cart['total'] ?? 0) + $bookingOngkos;
@@ -446,8 +644,62 @@ $title = $pageTitles[$page] ?? 'Nauli Dekor';
             </div>
         </div>
     </div>
+<?php if (! empty($crossSellingItems)): ?>
+    <section class="apriori-box">
+        <div class="apriori-addon-header">
+            <div class="apriori-addon-left">
+                <span class="apriori-addon-icon">✦</span>
+                <div>
+                    <b>Tambahkan sentuhan personal</b>
+                    <p>Lengkapi pesanan Anda dengan perintilan dekorasi.</p>
+                </div>
+            </div>
+            <a href="<?= base_url('tambahan-dekorasi') ?>" class="apriori-addon-link">Pilih tambahan →</a>
+        </div>
+
+        <div class="apriori-grid">
+            <?php foreach ($crossSellingItems as $rec): ?>
+                <?php
+                $recImgName = ! empty($rec['gambar']) ? basename((string) $rec['gambar']) : '';
+                $recImgUrl = $recImgName !== '' ? base_url('assets/images/' . rawurlencode($recImgName)) : '';
+                ?>
+                <article class="apriori-card">
+                    <?php if ($recImgUrl !== ''): ?>
+                        <img src="<?= esc($recImgUrl, 'attr') ?>"
+                             alt="<?= esc($rec['nama']) ?>"
+                             class="apriori-card-img"
+                             loading="lazy"
+                             onerror="this.style.display='none'">
+                    <?php endif; ?>
+
+                    <div class="apriori-card-body">
+                        <div>
+                            <span class="apriori-badge">
+                                <?= number_format((float) $rec['nilai_confidence'], 0) ?>% pelanggan memilih ini
+                            </span>
+                            <h4><?= esc($rec['nama']) ?></h4>
+                            <p class="apriori-desc"><?= esc($rec['deskripsi'] ?? '') ?></p>
+                        </div>
+
+                        <div>
+                            <div class="apriori-meta">
+                                <strong>Rp <?= number_format((float) $rec['harga'], 0, ',', '.') ?></strong>
+                                <span>Stok: <?= (int) $rec['stok'] ?></span>
+                            </div>
+
+                            <form action="<?= base_url('keranjang/tambahan/' . (int) $rec['id']) ?>" method="post">
+                                <?= csrf_field() ?>
+                                <button type="submit" class="apriori-btn">+ Tambahkan ke Pesanan</button>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+            <?php endforeach; ?>
+        </div>
+    </section>
+<?php endif; ?>
 </main>
-<?php elseif ($page === 'account' || $page === 'history'): ?>
+    <?php elseif ($page === 'account' || $page === 'history'): ?>
 <main class="account-page">
     <nav class="crumb"><a href="<?= base_url('dashboard') ?>">Beranda</a> / <?= $page === 'history' ? 'Riwayat Pesanan' : 'Akun Saya' ?></nav>
     <h1>Selamat datang, <?= esc($user['nama_lengkap'] ?? '') ?></h1>

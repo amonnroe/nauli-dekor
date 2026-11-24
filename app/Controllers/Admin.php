@@ -792,15 +792,19 @@ class Admin extends BaseController
      * sudah diverifikasi. Pembayaran awal pada orders direkonsiliasi dengan
      * pelunasan terverifikasi pada order_payments agar tidak dihitung dua kali.
      */
-    private function financialReportData(): array
+    private function financialReportData(bool $forPdf = false): array
     {
         $today = date('Y-m-d');
         $period = (string) $this->request->getGet('periode');
-        if (! in_array($period, ['harian', 'bulanan', 'tahunan', 'custom'], true)) {
-            $period = 'bulanan';
+        if ($period === '' && ($this->request->getGet('tanggal_mulai') || $this->request->getGet('tanggal_selesai'))) {
+            $period = 'custom';
+        }
+        if (! in_array($period, ['custom', 'mingguan', 'bulanan', 'tahunan', 'harian'], true)) {
+            $period = 'custom';
         }
 
         $date = trim((string) $this->request->getGet('tanggal'));
+        $week = trim((string) $this->request->getGet('minggu'));
         $month = trim((string) $this->request->getGet('bulan'));
         $year = (int) ($this->request->getGet('tahun') ?? date('Y'));
         $from = trim((string) $this->request->getGet('tanggal_mulai'));
@@ -814,6 +818,18 @@ class Admin extends BaseController
             if (! $isValidDate($date)) $date = $today;
             $startDate = $date;
             $endDate = $date;
+        } elseif ($period === 'mingguan') {
+            if (preg_match('/^(\d{4})-W(\d{2})$/', $week, $m)) {
+                $dto = new \DateTimeImmutable();
+                $dto = $dto->setISODate((int) $m[1], (int) $m[2]);
+                $startDate = $dto->format('Y-m-d');
+                $endDate = $dto->modify('+6 days')->format('Y-m-d');
+            } else {
+                $dto = (new \DateTimeImmutable($today))->modify('monday this week');
+                $startDate = $dto->format('Y-m-d');
+                $endDate = $dto->modify('+6 days')->format('Y-m-d');
+                $week = (new \DateTimeImmutable($startDate))->format('o-\WW');
+            }
         } elseif ($period === 'bulanan') {
             if (preg_match('/^\d{4}-(0[1-9]|1[0-2])$/', $month) !== 1) $month = date('Y-m');
             $startDate = $month . '-01';
@@ -915,11 +931,43 @@ SQL;
             $params
         )->getRowArray() ?? [];
 
-        $transactions = $db->query(
-            'SELECT ledger.* FROM (' . $ledgerSql . ') AS ledger' . $where .
-            ' ORDER BY ledger.tanggal_transaksi DESC, ledger.payment_ref DESC LIMIT 500',
+        $totalTransactionsCount = (int) ($db->query(
+            'SELECT COUNT(*) AS total_count FROM (' . $ledgerSql . ') AS ledger' . $where,
             $params
-        )->getResultArray();
+        )->getRowArray()['total_count'] ?? 0);
+
+        $perPage = 20;
+        $totalPages = max(1, (int) ceil($totalTransactionsCount / $perPage));
+        $pageParam = max(1, (int) ($this->request->getGet('page') ?? 1));
+        $currentPage = min($pageParam, $totalPages);
+        $offset = ($currentPage - 1) * $perPage;
+
+        if ($forPdf) {
+            $transactions = $db->query(
+                'SELECT ledger.* FROM (' . $ledgerSql . ') AS ledger' . $where .
+                ' ORDER BY ledger.tanggal_transaksi DESC, ledger.payment_ref DESC LIMIT 1000',
+                $params
+            )->getResultArray();
+        } else {
+            $transactions = $db->query(
+                'SELECT ledger.* FROM (' . $ledgerSql . ') AS ledger' . $where .
+                ' ORDER BY ledger.tanggal_transaksi DESC, ledger.payment_ref DESC LIMIT ' . $perPage . ' OFFSET ' . $offset,
+                $params
+            )->getResultArray();
+        }
+
+        $pagination = [
+            'currentPage' => $currentPage,
+            'totalPages' => $totalPages,
+            'totalRows' => $totalTransactionsCount,
+            'perPage' => $perPage,
+            'hasPrev' => $currentPage > 1,
+            'hasNext' => $currentPage < $totalPages,
+            'prevPage' => $currentPage - 1,
+            'nextPage' => $currentPage + 1,
+            'startRow' => $totalTransactionsCount > 0 ? $offset + 1 : 0,
+            'endRow' => min($totalTransactionsCount, $offset + count($transactions)),
+        ];
 
         $methodRows = $db->query(
             'SELECT ledger.metode, COUNT(*) AS record_count,
@@ -1011,13 +1059,13 @@ SQL;
 
         return [
             'filters' => [
-                'periode' => $period, 'tanggal' => $date, 'bulan' => $month, 'tahun' => $year,
+                'periode' => $period, 'tanggal' => $date, 'minggu' => $week, 'bulan' => $month, 'tahun' => $year,
                 'tanggal_mulai' => $from, 'tanggal_selesai' => $to,
                 'kanal' => $channel, 'status_transaksi' => $transactionStatus,
                 'tanggal_awal_hasil' => $startDate, 'tanggal_akhir_hasil' => $endDate,
             ],
             'filterQuery' => [
-                'periode' => $period, 'tanggal' => $date, 'bulan' => $month, 'tahun' => $year,
+                'periode' => $period, 'tanggal' => $date, 'minggu' => $week, 'bulan' => $month, 'tahun' => $year,
                 'tanggal_mulai' => $from, 'tanggal_selesai' => $to,
                 'kanal' => $channel, 'status_transaksi' => $transactionStatus,
             ],
@@ -1033,6 +1081,7 @@ SQL;
                 'netCashResult' => $revenue - $hpp - $operational,
             ],
             'transactions' => $transactions,
+            'pagination' => $pagination,
             'expenseRows' => $expenseRows,
             'ordersForExpense' => $ordersForExpense,
             'methodRows' => $methodRows,
@@ -1057,7 +1106,7 @@ SQL;
         return $this->response
             ->setContentType('text/html; charset=UTF-8')
             ->setBody(view('admin/financial-report-print', [
-                'report' => $this->financialReportData(),
+                'report' => $this->financialReportData(true),
                 'adminPhone' => (string) session()->get('admin_phone'),
             ]));
     }
