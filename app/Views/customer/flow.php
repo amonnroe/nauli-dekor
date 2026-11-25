@@ -513,7 +513,13 @@ $title = $pageTitles[$page] ?? 'Nauli Dekor';
         <?php $message = session()->getFlashdata($messageType); ?>
         <?php if ($message): ?><p class="<?= $messageType === 'error' ? 'field-error' : 'eyebrow' ?>" role="status"><?= esc($message) ?></p><?php endif; ?>
     <?php endforeach; ?>
-    <?php if (session('errors')): ?><p class="field-error"><?= esc(implode(' ', session('errors'))) ?></p><?php endif; ?>
+    <?php if (session('errors')): ?>
+        <div class="field-error" role="alert">
+            <?php foreach ((array) session('errors') as $err): ?>
+                <div><?= esc($err) ?></div>
+            <?php endforeach; ?>
+        </div>
+    <?php endif; ?>
     <div class="booking-layout">
         <form class="booking-form" id="booking-form" method="post" action="<?= base_url('booking') ?>">
             <?= csrf_field() ?>

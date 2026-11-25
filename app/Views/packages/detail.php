@@ -66,11 +66,7 @@ $typeLabel = $typeLabels[$package['jenis_paket'] ?? ''] ?? ucfirst((string) ($pa
 
                     <!-- Tanggal terpilih info + tombol Pilih Tanggal -->
                     <div class="pkg-date-trigger-section">
-                        <div class="cal-selected-info" id="cal-selected-info" style="display:none;">
-                            <span class="cal-sel-label">📅 Tanggal dipilih:</span>
-                            <strong id="cal-selected-display">—</strong>
-                            <button type="button" class="cal-clear-btn" id="cal-clear-btn">× Batalkan</button>
-                        </div>
+                        
                         <button type="button" class="btn-pilih-tanggal" id="btn-pilih-tanggal">
                          Pilih Tanggal Acara
                         </button>

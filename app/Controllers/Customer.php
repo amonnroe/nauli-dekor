@@ -530,6 +530,37 @@ class Customer extends BaseController
             'kelurahan_id'   => 'required|is_natural_no_zero',
             'lokasi_acara'   => 'required|max_length[5000]',
             'checkout_token' => 'required|exact_length[64]',
+        ], [
+            'nama_pemesan' => [
+                'required'   => 'Nama lengkap pemesan wajib diisi.',
+                'min_length' => 'Nama lengkap pemesan minimal terdiri dari 3 karakter.',
+                'max_length' => 'Nama lengkap pemesan maksimal 150 karakter.',
+            ],
+            'no_whatsapp' => [
+                'required'   => 'Nomor WhatsApp wajib diisi.',
+                'min_length' => 'Nomor WhatsApp tidak lengkap, minimal 8 digit angka.',
+                'max_length' => 'Nomor WhatsApp maksimal 20 karakter.',
+            ],
+            'tanggal_acara' => [
+                'required'   => 'Tanggal acara wajib dipilih.',
+                'valid_date' => 'Format tanggal acara tidak valid.',
+            ],
+            'kecamatan_id' => [
+                'required'           => 'Kecamatan lokasi acara wajib dipilih.',
+                'is_natural_no_zero' => 'Kecamatan lokasi acara tidak valid.',
+            ],
+            'kelurahan_id' => [
+                'required'           => 'Kelurahan/desa lokasi acara wajib dipilih.',
+                'is_natural_no_zero' => 'Kelurahan/desa lokasi acara tidak valid.',
+            ],
+            'lokasi_acara' => [
+                'required'   => 'Alamat lengkap lokasi acara wajib diisi.',
+                'max_length' => 'Alamat lokasi acara terlalu panjang (maksimal 5000 karakter).',
+            ],
+            'checkout_token' => [
+                'required'     => 'Sesi pemesanan tidak valid, silakan muat ulang halaman.',
+                'exact_length' => 'Sesi pemesanan tidak valid, silakan muat ulang halaman.',
+            ],
         ])) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
@@ -1000,6 +1031,15 @@ class Customer extends BaseController
         if (! $this->validate([
             'nama_lengkap' => 'required|min_length[3]',
             'no_whatsapp'  => 'required|min_length[8]',
+        ], [
+            'nama_lengkap' => [
+                'required'   => 'Nama lengkap wajib diisi.',
+                'min_length' => 'Nama lengkap minimal terdiri dari 3 karakter.',
+            ],
+            'no_whatsapp' => [
+                'required'   => 'Nomor WhatsApp wajib diisi.',
+                'min_length' => 'Nomor WhatsApp tidak lengkap, minimal 8 digit angka.',
+            ],
         ])) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
@@ -1115,6 +1155,11 @@ class Customer extends BaseController
 
         if (! $this->validate([
             'checkout_token' => 'required|exact_length[64]',
+        ], [
+            'checkout_token' => [
+                'required'     => 'Sesi pembayaran tidak valid, silakan muat ulang halaman.',
+                'exact_length' => 'Sesi pembayaran tidak valid, silakan muat ulang halaman.',
+            ],
         ])) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
